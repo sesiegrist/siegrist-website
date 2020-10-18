@@ -1,6 +1,6 @@
 ---
-title: "Service"
-description: "this is meta description"
+title: "Our Research Group"
+description: "Siegrist Lab team members"
 draft: false
 bg_image: "images/featue-bg.jpg"
 ---

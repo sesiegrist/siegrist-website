@@ -22,4 +22,6 @@ information:
 
 ## Behance Website Redesign
 
-We discovered baskka dsdd
+We discovered baskka dsdd jdhjs
+
+![images/teams/doyle.png](Susie)

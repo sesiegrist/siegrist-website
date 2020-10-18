@@ -150,7 +150,7 @@ URL = "project"
 weight = 3
 
 [[Languages.en.menu.main]]
-name = "Service"
+name = "Our Group"
 URL = "service"
 weight = 4
 
