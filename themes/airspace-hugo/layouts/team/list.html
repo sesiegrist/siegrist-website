@@ -16,25 +16,25 @@
                 <input type="radio" name="shuffle-filter" value="all" checked="checked">{{ i18n "all" }}
               </label>
               {{ $categories := slice }}
-              {{ range .Data.Pages }}
-              {{ $categories = $categories | append .Params.Category }}
+              {{ range where .Site.Pages ".Params.type" "member" }}
+              {{ $categories = $categories | append .Params.lab_position }}
               {{ end }}
               {{ range ( $categories | uniq ) }}
               <label class="btn btn-sm btn-primary">
-                <input type="radio" name="shuffle-filter" value="{{ . | urlize }}">{{ . | humanize }}
+                <input type="radio" name="shuffle-filter" value="{{ . | urlize }}">{{ . }}
               </label>
               {{ end }}
             </div>
           </div>
           <div class="row shuffle-wrapper">
-            {{ range .Data.Pages }}
-            <div class="col-md-4 portfolio-item shuffle-item" data-groups="[&quot;{{ .Params.Category | urlize }}&quot;]">  
-              <img src="{{ .Params.Image | relURL }}" alt="{{ .Title }}">
+            {{ range where (where .Site.Pages "Params.status" "current") ".Params.type" "member" }}
+            <div class="col-md-4 portfolio-item shuffle-item" data-groups="[&quot;{{ .Params.lab_position | urlize }}&quot;]">
+              <img src="{{ .Params.Photo | relURL }}" alt="{{ .Title }}">
               <div class="portfolio-hover">
                 <div class="portfolio-content">
                   <a href="{{ .Params.Image | relURL }}" class="portfolio-popup"><i class="icon ion-search"></i></a>
                   <a class="h3" href="{{ .Permalink }}">{{ .Title }}</a>
-                  <p>{{ .Params.Description }}</p>
+                  <p>{{ .Params.Lab_position }}</p>
                 </div>
               </div>
             </div>
@@ -42,6 +42,10 @@
           </div>
         </div>
       </div>
+      <div class="col-md-4">
+        {{ partial "team-sidebar.html" . }}
+      </div>
+
     </div>
   </div>
 </section>

@@ -52,7 +52,9 @@ link = "plugins/google-map/gmap.js"
 
 [params.widgets]
 sidebar = ["recent_posts", "taxonomy_category", "taxonomy_tags"]
-
+teamsidebar = ["team_members"]
+projectsidebar = ["project_info", "current_projects"]
+publicationssidebar = ["recent_posts", "current_projects"]
 
 #################### default parameters ################################
 [params]
@@ -60,11 +62,11 @@ logo = "images/logo.png"
 logo_width = "150px"
 # Meta data
 description = "This is meta description"
-author = "Themefisher"
+author = "Siegrist Lab"
 # Contact Information
 mobile = "0124857985320"
-email = "demo@email.com"
-location = "North Main Street,Brooklyn Australia"
+email = "ses4gr@virginia.com"
+location = "Physical Life Sciences Building, 90 Geldard Dr, University of Virginia"
 # contact form action
 contact_form_action = "#" # contact form works with : https://formspree.io
 # Google Analitycs
@@ -87,13 +89,14 @@ link = "contact"
 [params.gmap]
 enable = true
 gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
-map_latitude = "51.5223477"
-map_longitude = "-0.1622023"
+# https://www.google.com/maps/place/Physical+Life+Sciences+Building,+University+of+Virginia/@38.0329832,-78.5146156,17z/data=!4m13!1m7!3m6!1s0x89b3865ba6b0f6ab:0xe93e095946c885d6!2s90+Geldard+Dr,+Charlottesville,+VA+22903!3b1!8m2!3d38.032979!4d-78.5124269!3m4!1s0x89b3865ba6a606e1:0x3cea570629ea49b1!8m2!3d38.032979!4d-78.5124269
+map_latitude = "38.0329832"
+map_longitude = "-78.5146156"
 map_marker = "images/marker.png"
 
 # cookies
 [params.cookies]
-enable = true
+enable = false
 expire_days = 2
   
 ############################# social site ########################
@@ -140,71 +143,76 @@ URL = "/"
 weight = 1
 
 [[Languages.en.menu.main]]
-name = "About"
+name = "Research"
 URL = "about"
 weight = 2
 
 [[Languages.en.menu.main]]
-name = "Research"
+name = "Projects"
 URL = "project"
 weight = 3
 
 [[Languages.en.menu.main]]
-name = "Our Group"
-URL = "service"
+name = "Publications"
+URL = "publications"
 weight = 4
+
+[[Languages.en.menu.main]]
+name = "Team"
+URL = "team"
+weight = 5
 
 [[Languages.en.menu.main]]
 name = "News"
 URL = "blog"
-weight = 5
-
-[[Languages.en.menu.main]]
 weight = 6
-name = "Pages"
-hasChildren = true
 
-  [[Languages.en.menu.main]]
-  parent = "Pages"
-  name = "FAQ"
-  URL = "faq"
-
-  [[Languages.en.menu.main]]
-  parent = "Pages"
-  name = "Pricing"
-  URL = "pricing"
+#[[Languages.en.menu.main]]
+#weight = 7
+#name = "Pages"
+#hasChildren = true
+#
+#  [[Languages.en.menu.main]]
+#  parent = "Pages"
+# name = "FAQ"
+#  URL = "faq"
+#
+#  [[Languages.en.menu.main]]
+#  parent = "Pages"
+#  name = "Pricing"
+#  URL = "pricing"
   
 [[Languages.en.menu.main]]
 name = "Contact"
 URL = "contact"
-weight = 7
+weight = 8
 
 
 # footer menu
 [[Languages.en.menu.footer]]
-name = "About"
+name = "Research"
 URL = "about"
 weight = 1
 
 [[Languages.en.menu.footer]]
-name = "Project"
+name = "Projects"
 URL = "project"
 weight = 2
 
 [[Languages.en.menu.footer]]
-name = "Service"
-URL = "service"
+name = "Publications"
+URL = "publications"
 weight = 3
 
 [[Languages.en.menu.footer]]
-name = "Pricing"
-URL = "pricing"
+name = "Team"
+URL = "team"
 weight = 4
 
 [[Languages.en.menu.footer]]
-name = "FAQ"
-URL = "faq"
-weight = 5
+name = "News"
+URL = "blog"
+weight = 4
 
 [[Languages.en.menu.footer]]
 name = "Contact"
@@ -271,29 +279,24 @@ weight = 7
 
 # footer menu
 [[Languages.fr.menu.footer]]
-name = "About"
+name = "Research"
 URL = "about"
 weight = 1
 
 [[Languages.fr.menu.footer]]
-name = "Project"
+name = "Projects"
 URL = "project"
 weight = 2
 
 [[Languages.fr.menu.footer]]
-name = "Service"
-URL = "service"
+name = "Team"
+URL = "team"
 weight = 3
 
 [[Languages.fr.menu.footer]]
-name = "Pricing"
-URL = "pricing"
+name = "News"
+URL = "blog"
 weight = 4
-
-[[Languages.fr.menu.footer]]
-name = "FAQ"
-URL = "faq"
-weight = 5
 
 [[Languages.fr.menu.footer]]
 name = "Contact"

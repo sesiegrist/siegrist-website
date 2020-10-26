@@ -1,6 +1,6 @@
 ---
 title: "Drop Us A Note"
-description: "this is meta description"
+description: "We're hiring!"
 draft: false
 bg_image: "images/featue-bg.jpg"
 ---

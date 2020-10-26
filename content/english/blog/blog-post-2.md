@@ -1,11 +1,11 @@
 ---
 title: "Review accepted"
 date: 2020-10-02T11:07:10+06:00
-author: Sarah Siegrist
+author: "Sarah Siegrist"
 image : "images/blog/blog-post-2.jpg"
 bg_image: "images/featue-bg.jpg"
-categories: ["Artificial Intelligence"]
-tags: ["Advice","Retro"]
+categories: ["Team News"]
+tags: ["Publications"]
 description: "this is meta description"
 draft: false
 type: "post"

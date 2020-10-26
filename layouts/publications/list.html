@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ $data := index site.Data site.Language.Lang }}
+
+
+            {{ range .Data.Pages }}
+            <ul>
+            	<li>
+            	{{ .Title }}
+            	</li>
+            </ul>
+            {{ end }}
+            
+                    <div>
+           {{ .Scratch.Set "exclude" .Title }}
+           {{ partial "publications-sidebar.html" . }}
+        </div>
+
+{{ end }}

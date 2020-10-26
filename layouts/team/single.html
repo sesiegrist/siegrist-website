@@ -9,17 +9,18 @@
 				<div class="text-center">
 					<figure>
 						{{ if .Params.Photo }}
-						<img style="border-radius: 50%;" class="img-fluid" src="{{.Params.Photo}}">
+						<img style="border-radius: 50%;" class="img-fluid" src="{{ .Params.Photo }}">
 						{{else if .Params.Email}}
 						<img style="border-radius: 50%;" class="img-fluid"
 							src="https://www.gravatar.com/avatar/{{ md5 .Params.email }}?s=128&pg&d=identicon">
 						{{ end }}
 						<figcaption>
-							<h5 class="font-weight-bold">
-								{{ .Params.Name }}
-							</h5>
+							<h2 class="font-weight-bold">
+								{{ .Params.Lab_position }}
+							</h2>
 						</figcaption>
 					</figure>
+					<h4>{{ .Params.Title }}'s Interests</h4>
 					<hr>
 					{{ .Content }}
 					<hr>

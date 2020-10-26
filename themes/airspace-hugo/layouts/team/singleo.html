@@ -6,12 +6,12 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-        {{ $paginator := .Paginate .Data.Pages }}
+        {{ $paginator := .Paginate (where .Site.Pages ".Params.type" "member") }}
         {{ range $paginator.Pages }}
         <div class="post">
           <div class="post-media post-thumb">
             <a href="{{ .Permalink }}">
-              <img src="{{ .Params.Image | relURL }}" alt="{{ .Title }}">
+              <img src="{{ .Params.Photo | relURL }}" alt="{{ .Title }}">
             </a>
           </div>
           <h3 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
@@ -21,9 +21,9 @@
               <li><i class="ion-android-people"></i>
                 {{ i18n "posted_by" }}
                 {{if site.Params.multi_author}}
-                {{ range $index, $elements:= .Params.Author }}{{ if ne $index 0 }}, {{ end }}<a class="text-primary" href="{{ `team/` | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
+                  {{ range $index, $elements:= .Params.Author }}{{ if ne $index 0 }}, {{ end }}<a class="text-primary" href="{{ `author/` | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
                 {{else}}
-                <a class="text-primary" href="{{ `team/` | relLangURL }}{{ .Params.Author | urlize }}">{{ .Params.Author }}</a>
+                <a class="text-primary" href="{{ `author/` | relLangURL }}{{ .Params.Author | urlize }}">{{ .Params.Author }}</a>
                 {{end}}
               </li>
               <li><i class="ion-pricetags"></i> 
