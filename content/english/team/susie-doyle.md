@@ -5,7 +5,7 @@ publish_name: "Susan E. Doyle"
 email: "sed5c@virginia.edu"
 bg_image: "images/team/people_background.png"
 photo: "/images/team/doyle.png"
-lab_position: "Senior Research Scientist"
+lab_position: "Postdocs & Scientists"
 Description: "Senior Research Scientist"
 status: "current"
 draft: false

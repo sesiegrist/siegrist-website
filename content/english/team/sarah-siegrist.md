@@ -6,7 +6,7 @@ email: "ses4gr@virginia.edu"
 bg_image: "images/team/people_background.png"
 photo: "/images/team/siegrist.png"
 lab_position: "PI"
-Description: "The Boss"
+Description: "- I love science -"
 status: "current"
 draft: false
 social:
