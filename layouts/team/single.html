@@ -63,6 +63,40 @@
 			{{ end }}
 		</div>
 	</div>
+</section>
 
-{{ end }}
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="section-title">
+					<h2>{{ $firstname }}'s Publications</h2>
+				</div>
+			</div>
+			{{ range where .Site.Pages "Type" "publications" }}
+                {{ if in .Params.members $member }}
+			<!-- <div class="col-md-6"> -->
+				<div class="post">
+				<div class="post-media">
+					<div class="post-thumb">
+						<a href="{{ .Permalink }}">
+							<img class="demo" src="{{ .Params.Image | relURL }}" alt="{{ .Title }}">
+						</a>
+					</div>
+					<div>
+					<h3 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+					<div class="post-content">
+						<p>{{ .Summary }}</p>
+						<a href="{{ .Permalink }}" class="btn btn-main">{{ i18n "read_more" }}</a>
+					</div>
+					</div>
+				</div>
+				</div>
+			<!-- </div> -->
+			{{ end }}
+			{{ end }}
+		</div>
+	</div>
+</section>
+
 

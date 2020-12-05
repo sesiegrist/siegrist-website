@@ -5,8 +5,8 @@ publish_name: "Katie Woods"
 email: "?@?"
 bg_image: "images/team/people_background.png"
 photo: "/images/team/sood.png"
-lab_position: "Undergrad Students"
-Description: "Undergrad"
+lab_position: "Undergrad"
+lab_group: "Undergrad Students"
 status: "current"
 draft: false
 social:

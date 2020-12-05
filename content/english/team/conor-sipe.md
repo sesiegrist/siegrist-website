@@ -5,8 +5,8 @@ publish_name: "Conor W. Sipe"
 email: "?@?"
 bg_image: "images/team/people_background.png"
 photo: "/images/team/sipe.png"
-lab_position: "Postdocs & Scientists"
-Description: "Postdoc"
+lab_position: "Postdoc"
+lab_group: "Alumni"
 status: "alumni"
 draft: false
 social:

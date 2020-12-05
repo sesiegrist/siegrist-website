@@ -17,7 +17,7 @@
               </label>
               {{ $categories := slice }}
               {{ range where .Site.Pages ".Params.type" "member" }}
-                  {{ $categories = $categories | append .Params.lab_position }}
+                  {{ $categories = $categories | append .Params.lab_group }}
               {{ end }}
               {{ range ( $categories | uniq ) }}
               <label class="btn btn-sm btn-primary">
@@ -28,7 +28,7 @@
           </div>
           <div class="row shuffle-wrapper">
             {{ range where (where .Site.Pages "Params.status" "current") ".Params.type" "member" }}
-            <div class="col-md-4 portfolio-item shuffle-item" data-groups="[&quot;{{ .Params.lab_position | urlize }}&quot;]">
+            <div class="col-md-4 portfolio-item shuffle-item" data-groups="[&quot;{{ .Params.lab_group | urlize }}&quot;]">
               <img  class="hover-shadow" src="{{ .Params.Photo | relURL }}" alt="{{ .Title }}">
               <div class="portfolio-hover">
                 <div class="portfolio-content">

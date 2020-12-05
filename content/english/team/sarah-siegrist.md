@@ -5,8 +5,8 @@ publish_name: "Sarah E. Siegrist"
 email: "ses4gr@virginia.edu"
 bg_image: "images/team/people_background.png"
 photo: "/images/team/siegrist.png"
-lab_position: "PI"
-Description: "- I love science -"
+lab_position: "Principal Investigator"
+lab_group: "PI"
 status: "current"
 draft: false
 social:
