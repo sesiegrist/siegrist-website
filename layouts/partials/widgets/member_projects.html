@@ -5,7 +5,7 @@
     {{ if (in .Params.Members $member ) }}
     <div class="media">
       <a class="pull-left" href="{{ .Permalink }}">
-        <img class="media-object" src="{{ .Params.Image | relURL }}" alt="{{ .Title }}">
+        <img class="media-object hover-shadow" src="{{ .Params.Image | relURL }}" alt="{{ .Title }}">
       </a>
       <div class="media-body">
         <h4 class="media-heading"><a href="{{ .Permalink }}">{{ .Name }}</a></h4>
@@ -15,3 +15,13 @@
     {{ end }}
     {{ end }}
   </div>
+  
+<style>  
+  img.hover-shadow {
+  transition: 0.2s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>

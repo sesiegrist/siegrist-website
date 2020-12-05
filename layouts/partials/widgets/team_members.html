@@ -5,7 +5,7 @@
     {{ if and (eq .Params.Status "current") (ne $exclude .Title) }}
     <div class="media">
       <a class="pull-left" href="{{ .Permalink }}">
-        <img class="media-object" src="{{ .Params.Photo | relURL }}" alt="{{ .Title }}">
+        <img class="media-object hover-shadow" src="{{ .Params.Photo | relURL }}" alt="{{ .Title }}">
       </a>
       <div class="media-body">
         <h4 class="media-heading"><a href="{{ .Permalink }}">{{ .Name }}</a></h4>
@@ -15,3 +15,15 @@
     {{ end }}
     {{ end }}
   </div>
+  
+<style>
+
+img.hover-shadow {
+  padding: 5px;
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>

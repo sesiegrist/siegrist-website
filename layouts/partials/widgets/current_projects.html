@@ -1,11 +1,11 @@
 <div class="widget widget-latest-post">
 	{{ $exclude:=.Scratch.Get "exclude" }}
-    <h4 class="widget-title"><a href="/project">Other Projects</a></h4>
+    <h4 class="widget-title"><a href="/project">Related Projects</a></h4>
     {{ range where site.Pages "Type" "project" }}
     {{ if and (.Params.current) (ne .Params.Title $exclude ) }}
     <div class="media">
       <a class="pull-left" href="{{ .Permalink }}">
-        <img class="media-object" src="{{ .Params.Image | relURL }}" alt="{{ .Title }}">
+        <img class="media-object hover-shadow" src="{{ .Params.Image | relURL }}" alt="{{ .Title }}">
       </a>
       <div class="media-body">
         <h4 class="media-heading"><a href="{{ .Permalink }}">{{ .Name }}</a></h4>
@@ -15,3 +15,14 @@
     {{ end }}
     {{ end }}
   </div>
+
+<style>
+  img.hover-shadow {
+  padding: 5px;
+  transition: 0.2s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>

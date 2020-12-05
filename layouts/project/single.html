@@ -7,26 +7,23 @@
 <section class="portfolio-single-page section-sm">
   <div class="container">
     <div class="row">
-      <div class="col-md-8">
-        <img class="img-responsive w-100" src="{{ .Params.Image | relURL }}" alt="">
-      </div>
-      <div class="col-md-4">
+      <div class="col-md-9">
+        <div class="project-content mt-50">
+          <img style="width:500px;height:auto;" align="left" src="{{ .Params.Image | relURL }}" alt="">
+          {{ .Content }}
+	  </div>
+	</div>
+    <div class="row">
+      <div class="col-md-3">
         <div>
            {{ .Scratch.Set "exclude" .Title }}
            {{ partial "project-sidebar.html" . }}
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="project-content mt-50">
-          {{ .Content }}
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 
-
-
 {{ end }}
+
+

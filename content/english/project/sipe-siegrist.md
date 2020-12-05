@@ -2,12 +2,12 @@
 layout: "project"
 type: "project"
 current: true
-title: "Nutrient-Independent Proliferation"
+title: "Dietary control of Stem Cell Proliferation"
 description: "Eyeless uncouples mushroom body neuroblast proliferation from dietary amino acids in Drosophila"
 draft: false
 image : "images/projects/sipe-siegrist-17.png"
-bg_image: "images/projects/sipe-siegrist-17.png"
-category: "Nutrition"
+bg_image: "images/projects/sipe-siegrist-17-bg.png"
+category: "Dietary Control"
 members: ["Conor Sipe", "Sarah Siegrist"]
 information:
   - label : "Members"

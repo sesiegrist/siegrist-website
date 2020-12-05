@@ -2,90 +2,67 @@
 
 {{ partial "page-title.html" . }}
 
-<section class="section" style="background: #f5f5f5;">
+{{ $member:=.Params.Title }}
+{{ $firstname:= index (split $member " ") 0 }}
+<section class="page-wrapper">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
-				<div class="text-center">
-					<figure>
-						{{ if .Params.Photo }}
-						<img style="border-radius: 50%;" class="img-fluid" src="{{ .Params.Photo }}">
-						{{else if .Params.Email}}
-						<img style="border-radius: 50%;" class="img-fluid"
-							src="https://www.gravatar.com/avatar/{{ md5 .Params.email }}?s=128&pg&d=identicon">
-						{{ end }}
-						<figcaption>
-							<h2 class="font-weight-bold">
-								{{ .Params.Lab_position }}
-							</h2>
-						</figcaption>
-					</figure>
-					<h4>{{ .Params.Title }}'s Interests</h4>
-					<hr>
-					{{ .Content }}
-					<hr>
-					<ul class="list-inline">
-						{{ range .Params.Social }}
-						<li class="list-inline-item"><a class="share-icon bg-secondary" href="{{ .link | safeURL}}"><i
-									class="{{ .icon }}"></i></a></li>
-						{{ end }}
-					</ul>
+			<div class="col-md-8">
+				<div class="post post-single">
+					<div class="post-thumb">
+						<img class="img-responsive" src="{{ .Params.Photo | relURL }}" alt="{{ .Title }}">
+					</div>
+					<div class="section-title">
+					    <h2>{{ $firstname }}'s Interests</h2>
+					</div>
+					<div class="post-content post-excerpt">
+						{{ .Content }}
+					</div>
+					<div class="post-comments">
+						{{ template "_internal/disqus.html" . }}
+					</div>
 				</div>
 			</div>
+            <div class="col-md-4">
+            	{{ .Scratch.Set "exclude" .Title }}
+                {{ partial "team-sidebar.html" . }}
+            </div>
 		</div>
 	</div>
 </section>
 
-<section class="section">
+<section>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-				<div class="section-title text-center">
-					<h2>{{ i18n "posted_by" }} {{ .Title }}</h2>
+				<div class="section-title">
+					<h2>{{ $firstname }}'s Projects</h2>
 				</div>
 			</div>
-			{{ $authored_pages := newScratch }}
-			{{ if site.Params.multi_author }}
-			{{ .Scratch.Set "authored_pages" (where site.RegularPages "Params.author" "intersect" (slice .Title)) }}
-			{{ else }}
-			{{ .Scratch.Set "authored_pages" (where site.RegularPages "Params.author" .Title) }}
-			{{ end }}
-			{{ range (.Scratch.Get "authored_pages") }}
-			<div class="col-md-6">
+			{{ range where .Site.Pages "Type" "project" }}
+                {{ if in .Params.members $member }}
+			<!-- <div class="col-md-6"> -->
 				<div class="post">
+				<div class="post-media">
 					<div class="post-thumb">
 						<a href="{{ .Permalink }}">
-							<img class="img-responsive" src="{{ .Params.Image | relURL }}" alt="{{ .Title }}">
+							<img class="demo" src="{{ .Params.Image | relURL }}" alt="{{ .Title }}">
 						</a>
 					</div>
+					<div>
 					<h3 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-					<div class="post-meta">
-						<ul>
-							<li><i class="ion-calendar"></i> {{ .PublishDate.Format "January 2, 2006" }}</li>
-              <li><i class="ion-android-people"></i>
-                {{ i18n "posted_by" }}
-                {{if site.Params.multi_author}}
-                {{ range $index, $elements:= .Params.Author }}{{ if ne $index 0 }}, {{ end }}<a class="text-primary" href="{{ `author/` | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
-                {{else}}
-                <a class="text-primary" href="{{ `author/` | relLangURL }}{{ .Params.Author | urlize }}">{{ .Params.Author }}</a>
-                {{end}}
-              </li>
-              <li><i class="ion-pricetags"></i> 
-                {{ range $index, $elements:= .Params.Tags }}
-                {{ if ne $index 0 }}, {{ end }}<a href="{{ `tags/` | relLangURL }}{{ . | lower }}">{{ . | humanize }}</a>
-								{{ end }}
-              </li>
-						</ul>
-					</div>
 					<div class="post-content">
 						<p>{{ .Summary }}</p>
 						<a href="{{ .Permalink }}" class="btn btn-main">{{ i18n "read_more" }}</a>
 					</div>
+					</div>
 				</div>
-			</div>
+				</div>
+			<!-- </div> -->
+			{{ end }}
 			{{ end }}
 		</div>
 	</div>
-</section>
 
 {{ end }}
+

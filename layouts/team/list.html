@@ -29,7 +29,7 @@
           <div class="row shuffle-wrapper">
             {{ range where (where .Site.Pages "Params.status" "current") ".Params.type" "member" }}
             <div class="col-md-4 portfolio-item shuffle-item" data-groups="[&quot;{{ .Params.lab_position | urlize }}&quot;]">
-              <img src="{{ .Params.Photo | relURL }}" alt="{{ .Title }}">
+              <img  class="hover-shadow" src="{{ .Params.Photo | relURL }}" alt="{{ .Title }}">
               <div class="portfolio-hover">
                 <div class="portfolio-content">
                   <a href="{{ .Params.Image | relURL }}" class="portfolio-popup"><i class="icon ion-search"></i></a>
@@ -46,5 +46,11 @@
     </div>
   </div>
 </section>
+
+<style>
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>
 
 {{ end }}

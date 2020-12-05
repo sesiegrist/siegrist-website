@@ -53,6 +53,7 @@ link = "plugins/google-map/gmap.js"
 [params.widgets]
 sidebar = ["recent_posts", "taxonomy_category", "taxonomy_tags"]
 teamsidebar = ["team_members"]
+membersidebar = ["member_projects"]
 projectsidebar = ["project_info", "current_projects"]
 publicationssidebar = ["recent_posts", "current_projects"]
 

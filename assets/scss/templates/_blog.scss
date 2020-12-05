@@ -14,7 +14,7 @@
   .post-media {
     &.post-thumb {
       img {
-        width: 10%;
+        width: 100%;
         height: auto;
       }
     }
@@ -29,7 +29,7 @@
   .post-title {
     margin-top: 10px;
     margin: 25px 0 0;
-    text-transform: uppercase;
+    text-transform: lowercase;
 
     a {
       color: $primary-color;

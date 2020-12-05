@@ -2,11 +2,11 @@
 layout: "project"
 type: "project"
 current: false
-title: "Stem Cell Termination"
+title: "Termination of Neurogenesis"
 description: "E93 Integrates Neuroblast Intrinsic State with Developmental Time to Terminate MB Neurogenesis via Autophagy"
 draft: false
 image : "images/projects/pahl-doyle-siegrist-19.png"
-bg_image: "images/projects/pahl-doyle-siegrist-19.png"
+bg_image: "images/projects/pahl-doyle-siegrist-19-bg.png"
 category: "Termination"
 members: ["Matt Pahl", "Susie Doyle", "Sarah Siegrist"]
 information:
