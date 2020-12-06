@@ -1,4 +1,5 @@
 ---
+type: "member"
 layout: "team"
 title: "Taylor Nystrom"
 publish_name: "Taylor Nystrom"

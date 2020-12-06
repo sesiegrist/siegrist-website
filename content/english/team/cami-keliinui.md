@@ -1,4 +1,5 @@
 ---
+type: "member"
 layout: "team"
 title: "Cami Naomi Keliinui"
 publish_name: "Cami Naomi Keliinui"

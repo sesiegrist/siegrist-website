@@ -1,4 +1,5 @@
 ---
+type: "member"
 layout: "team"
 title: "Conor Sipe"
 publish_name: "Conor W. Sipe"

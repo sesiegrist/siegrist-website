@@ -1,4 +1,5 @@
 ---
+type: "member"
 layout: "team"
 title: "Xin Yuan"
 publish_name: "Xin Yuan"

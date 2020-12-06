@@ -1,4 +1,5 @@
 ---
+type: "member"
 layout: "team"
 title: "Chhavi Sood"
 publish_name: "Chhavi Sood"

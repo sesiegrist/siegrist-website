@@ -1,4 +1,5 @@
 ---
+type: "member"
 layout: "team"
 title: "Nahid Md Ausrafuggaman"
 email: "?@?"

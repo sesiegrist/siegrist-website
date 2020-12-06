@@ -1,4 +1,5 @@
 ---
+type: "member"
 layout: "team"
 title: "Matt Pahl"
 publish_name: "Matt C. Pahl"
