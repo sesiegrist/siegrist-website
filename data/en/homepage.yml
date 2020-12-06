@@ -3,7 +3,7 @@ banner:
   enable : true
   bg_image : "images/main-bg.png"
   bg_overlay : true
-  title : "Neural Stem cells: their developmental potential and metabolic flexibility"
+  title : "-- Neural Stem cells -- developmental potential and metabolic control"
   content :
   button:
     enable : true

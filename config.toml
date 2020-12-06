@@ -206,7 +206,7 @@ URL = "publications"
 weight = 3
 
 [[Languages.en.menu.footer]]
-name = "Team"
+name = "Our Team"
 URL = "team"
 weight = 4
 
