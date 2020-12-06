@@ -59,7 +59,7 @@ publicationssidebar = ["recent_posts", "current_projects"]
 
 #################### default parameters ################################
 [params]
-logo = "images/logo.png"
+logo = "images/siegristlab-logo.png"
 logo_width = "150px"
 # Meta data
 description = "This is meta description"
