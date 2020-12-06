@@ -1,4 +1,5 @@
 ---
+type: "member"
 layout: "team"
 Title: "Susie Doyle"
 publish_name: "Susan E. Doyle"

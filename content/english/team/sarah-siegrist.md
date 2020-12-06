@@ -1,4 +1,5 @@
 ---
+type: member
 layout: "team"
 title: "Sarah Siegrist"
 publish_name: "Sarah E. Siegrist"

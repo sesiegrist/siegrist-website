@@ -1,11 +1,3 @@
-{{ define "main" }}
-
-{{ partial "page-title.html" . }}
-
-{{ $data := index site.Data site.Language.Lang }}
-
-
-            {{ range .Data.Pages }}
                 	<p>
                 	{{ delimit .Params.authors ", " }}
                 	({{ .Params.Date.Format "2006" }})
@@ -17,11 +9,3 @@
                 		<a href={{ $citation.url }}>{{ $citation.label }}</a>
                 	{{ end }}
                 	</p>
-            {{ end }}
-            
-                    <div>
-           {{ .Scratch.Set "exclude" .Title }}
-           {{ partial "publications-sidebar.html" . }}
-        </div>
-
-{{ end }}

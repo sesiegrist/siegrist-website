@@ -3,17 +3,16 @@
 {{ partial "page-title.html" . }}
 
 {{ $member:=.Params.Title }}
+{{ $author:=.Params.publish_name }}
 {{ $firstname:= index (split $member " ") 0 }}
 
 <section class="page-wrapper">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8">
-				
-					    <div>
-					    <h2>{{ $firstname }}'s Interests</h2>
-					    </div>
-				<hr>	    
+				<div>
+				    <h2>{{ $firstname }}'s Interests</h2>
+				</div>
 				<div class="post post-single">
 					<div class="post-thumb">
 						<img style="width:200px;height:auto;padding:15px" align="left" src="{{ .Params.Photo | relURL }}" alt="{{ .Title }}">
@@ -47,31 +46,24 @@
 			<!-- </div> -->
 			{{ end }}
 			{{ end }}
+                <hr>
 				<div>
 					<h2>{{ $firstname }}'s Publications</h2>
 				</div>
-			{{ range where .Site.Pages "Type" "publications" }}
-                {{ if in .Params.authors $member }}
-                <hr>
-			<!-- <div class="col-md-6"> -->
-				<div class="post">
-				<div class="post-media">
-					<div class="post-thumb" >
-						<a href="{{ .Permalink }}">
-							<img  class="hover-shadow" style="width:200px;height:auto;padding:10px;margin:10px" align="left" src="{{ .Params.Image | relURL }}" alt="{{ .Title }}">
-						</a>
-					</div>
-					    <div>
-					        <h3 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-					        <div class="post-content">
-						        <p>{{ .Summary }}</p>
-						        <a align="right" href="{{ .Permalink }}" class="btn btn-main">{{ i18n "read_more" }}</a>
-					        </div>
-					    </div>
-					 </div>   
-				</div>
-			<!-- </div> -->
-			{{ end }}
+			{{ range where .Site.Pages "Type" "publication" }}
+                {{ if in .Params.authors $author }}
+                	<p>
+                	{{ delimit .Params.authors ", " }}
+                	({{ .Params.Date.Format "2006" }})
+                	{{ .Params.title }}
+                	{{ range $index,$citation:=.Params.links }}
+                		{{ if ne $index 0 }}
+                		    <a> | </a>
+                		{{ end }}    
+                		<a href={{ $citation.url }}>{{ $citation.label }}</a>
+                	{{ end }}
+                	</p>
+			    {{ end }}
 			{{ end }}
 
 			</div>
