@@ -1,10 +1,10 @@
 ############################### Banner ##############################
 banner:
   enable : true
-  bg_image : "images/main-bg.png"
+  bg_image : 'images/mitotic-NBs-brain.png'
   bg_overlay : true
-  title : "-- Neural Stem cells -- developmental potential and metabolic control"
-  content :
+  title : "Neural Stem cells"
+  content : "-- Developmental Potential and Metabolic Control --"
   button:
     enable : true
     label : "Our Research Projects"
@@ -14,40 +14,50 @@ banner:
 about:
   enable : true
   title : "About Us"
-  description : "Somewhere, something incredible is waiting to be known     --Carl Sagan"
-  content : "We are a small academic research lab composed of scientists-in-training (students) and  research scientists (PhDs) working to understand how our brains are formed during development. The sheer number and diversity of neuron types in brains of adult animals fascinates us and we are working to understand how neural stem cells divide to produce such an immense diversity.  of different neuron types in physical environments that are ever changing and working to understand . Did you know that "
-  image : "images/wrapper-img.png"
+  description : "Somewhere, something incredible is waiting to be known -- Carl Sagan"
+  content : "We are a small academic research lab in the Biology department at the University of Virginia in Charlottesville, Virginia, USA. Our lab is located on the third floor of the Physical Life Sciences Building immersed among a number of other research labs whose mission is all geared towards unraveling fundamental principles that govern animal development, from the single cell fertilized egg (zygote) to multi-cellular organisms with complex tissues. We are scientists-in-training (undergraduate and graduate students) and research scientists (PhDs) working together, side by side, to tackle BIG QUESTIONS in the field of developmental and regenerative biology. In particular, we are interested in how neural stem cells in the developing brain divide to generate such an immense diversity of neuron types. Understanding how neuron diversity is generated during development will provide insight into how restore and replace neural tissue damaged by disease or injury."
+  image : "images/DIC-OR-96ALH.png"
+  
+
+############################# Diversity #################################
+diversity:
+  enable : true
+  description : "Peace is not merely a distant goal that we seek, but a means by which we arrive at that goal -- Martin Luther King Jr."
+  title : "What we believe in"
+  content : "We believe that anyone and everyone has something important to contribute. We are anti-racist and we pledge to make our work place more equitable, diverse, and inclusive. We respectfully support and encourage each other both professionally and personally and strive to be better listeners and better colleagues. We acknowledge that we all have inherent biases and strive to recognize and correct our inherent biases. We also work to educate our friends, peers, and family members on how to become more understanding and generous with our words."
+  image : "images/fly-cupcakes.png"
+  
 
 
 ######################### Portfolio ###############################
 portfolio:
-  enable : true
-  bg_image : "images/featue-bg.jpg"
-  title : "WE BELIEVE IN GREAT IDEAS"
-  content : "
-  Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-
-
-  Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-
-
-  Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-  "
+  enable : false
+  bg_image : "images/fly-cupcakes-white.png"
+  title : "What we believe in"
+  content : "Peace IS NOT MERELY A DISTANT GOAL THAT WE SEEK, BUT A MEANS BY WHICH WE ARRIVE AT THAT GOAL--MARTIN LUTHER KING JR. We believe that anyone and everyone has something important to contribute. We are anti-racist and we pledge to make our work place more equitable, diverse, and inclusive. We respectfully support and encourage each other both professionally and personally and strive to be better listeners and better colleagues. We acknowledge that we all have inherent biases and strive to recognize and correct our inherent biases. We also work to educate our friends, peers, and family members on how to become more understanding and generous with our words."
   button:
     enable : true
-    label : "View Works"
+    label : "UVA bio departmental statement on diversity and inclusion"
     link : "project"
+
+######################### Lab ###############################
+lab:
+  enable : true
+  image : "images/lab-group-cropped.png"
+  title : "The people who make the magic happen"
+  description : ""
+  content : ""
 
 
 ############################# Service ############################
 service:
-  enable : true
+  enable : false
   # service content comes from "data/*/service.yml" file
 
 
 ############################ call to action ###########################
 cta:
-  enable : true
+  enable : false
   bg_image : "images/call-to-action-bg.jpg"
   title : "We design delightful digital experiences."
   content : "Read more about what we do and our philosophy of design. Judge for yourself The work and results <br> we’ve achieved for other clients, and meet our highly experienced Team who just love to design."
@@ -58,7 +68,7 @@ cta:
 
 ############################# Funfacts ###############################
 funfacts:
-  enable : true
+  enable : false
   title : "Fun Facts About Us"
   description : "'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, <br> there live the
           blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics'"
