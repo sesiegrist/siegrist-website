@@ -11,7 +11,7 @@
 		<div class="row">
 			<div class="col-md-8">
 				<div>
-				    <h2>{{ $firstname }}'s Interests</h2>
+				    <h2>About {{ $firstname }}</h2>
 				</div>
 				<div class="post post-single">
 					<div class="post-thumb">
@@ -19,6 +19,7 @@
 						{{ .Content }}
 					</div>
 				</div>
+				<br style="clear:left;"/>
 				<hr>
 				<div>
 					<h2>{{ $firstname }}'s Projects</h2>
@@ -50,10 +51,15 @@
 				<div>
 					<h2>{{ $firstname }}'s Publications</h2>
 				</div>
+				<hr>
 			{{ range where .Site.Pages "Type" "publication" }}
                 {{ if in .Params.authors $author }}
                 	<p>
-                	{{ delimit .Params.authors ", " }}
+                	{{ $authors:=delimit .Params.authors ", " }}
+                	{{ $otherauthors:=split $authors $author }}
+                	{{ index $otherauthors 0 }}
+                	<a><b>{{ $author }}</b></a>
+                	{{ index $otherauthors 1 }}
                 	({{ .Params.Date.Format "2006" }})
                 	{{ .Params.title }}
                 	{{ range $index,$citation:=.Params.links }}
@@ -65,6 +71,7 @@
                 	</p>
 			    {{ end }}
 			{{ end }}
+			    <hr>
 
 			</div>
             <div class="col-md-4">
