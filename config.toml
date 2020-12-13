@@ -59,13 +59,13 @@ publicationssidebar = ["recent_posts", "current_projects"]
 
 #################### default parameters ################################
 [params]
-logo = "images/logo.png"
+logo = "images/siegristlab-logo.png"
 logo_width = "150px"
 # Meta data
 description = "This is meta description"
 author = "Siegrist Lab"
 # Contact Information
-mobile = "0124857985320"
+mobile = ""
 email = "ses4gr@virginia.com"
 location = "Physical Life Sciences Building, 90 Geldard Dr, University of Virginia"
 # contact form action
@@ -127,11 +127,11 @@ link = "#"
 
 
 ################################ English Language ########################
-[Languages.en]
-languageName = "En"
-languageCode = "en-us"
-contentDir = "content/english"
-weight = 1
+#[Languages.en]
+#languageName = "En"
+#languageCode = "en-us"
+#contentDir = "content/english"
+#weight = 1
 # copyright
 copyright = ""
 
@@ -168,10 +168,10 @@ name = "News"
 URL = "blog"
 weight = 6
 
-#[[Languages.en.menu.main]]
-#weight = 7
-#name = "Pages"
-#hasChildren = true
+# [[Languages.en.menu.main]]
+# weight = 7
+# name = "Pages"
+# hasChildren = true
 #
 #  [[Languages.en.menu.main]]
 #  parent = "Pages"
@@ -206,7 +206,7 @@ URL = "publications"
 weight = 3
 
 [[Languages.en.menu.footer]]
-name = "Team"
+name = "Our Team"
 URL = "team"
 weight = 4
 
@@ -221,11 +221,11 @@ URL = "contact"
 weight = 6
 
 ################################ France Language ########################
-[Languages.fr]
-languageName = "Fr"
-languageCode = "fr-fr"
-contentDir = "content/french"
-weight = 2
+#[Languages.fr]
+#languageName = "Fr"
+#languageCode = "fr-fr"
+#contentDir = "content/french"
+#weight = 2
 # copyright
 copyright = "Copyright &copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved"
 
@@ -257,20 +257,20 @@ name = "Blog"
 URL = "blog"
 weight = 5
 
-[[Languages.fr.menu.main]]
-weight = 6
-name = "Pages"
-hasChildren = true
+#[[Languages.fr.menu.main]]
+#weight = 6
+#name = "Pages"
+#hasChildren = true
+#
+#  [[Languages.fr.menu.main]]
+#  parent = "Pages"
+#  name = "FAQ"
+#  URL = "faq"
 
-  [[Languages.fr.menu.main]]
-  parent = "Pages"
-  name = "FAQ"
-  URL = "faq"
-
-  [[Languages.fr.menu.main]]
-  parent = "Pages"
-  name = "Tarification"
-  URL = "pricing"
+#  [[Languages.fr.menu.main]]
+#  parent = "Pages"
+#  name = "Tarification"
+#  URL = "pricing"
   
 [[Languages.fr.menu.main]]
 name = "Contact"

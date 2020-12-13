@@ -1,7 +1,7 @@
 ---
-type: publication
+type: "publication"
 subtype: "paper"
-title: "Neuroblast niche position is controlled by Phosphoinositide 3-kinase-dependent DE-Cadherin adhesion"
+title: "Neuroblast niche position is controlled by Phosphoinositide 3-kinase-dependent DE-Cadherin adhesion."
 authors: [
    "Susan E. Doyle",
    "Matthew C. Pahl",
