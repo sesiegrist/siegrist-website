@@ -127,11 +127,11 @@ link = "#"
 
 
 ################################ English Language ########################
-#[Languages.en]
-#languageName = "En"
-#languageCode = "en-us"
-#contentDir = "content/english"
-#weight = 1
+[Languages.en]
+languageName = "En"
+languageCode = "en-us"
+contentDir = "content/english"
+weight = 1
 # copyright
 copyright = ""
 
