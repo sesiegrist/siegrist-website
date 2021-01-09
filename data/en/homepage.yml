@@ -15,31 +15,10 @@ about:
   enable : true
   title : "About Us"
   description : "Somewhere, something incredible is waiting to be known -- Carl Sagan"
-  content : "We are a small academic research lab in the Biology department at the University of Virginia in Charlottesville, Virginia, USA. Our lab is located on the third floor of the Physical Life Sciences Building immersed among a number of other research labs whose mission is all geared towards unraveling fundamental principles that govern animal development, from the single cell fertilized egg (zygote) to multi-cellular organisms with complex tissues. We are scientists-in-training (undergraduate and graduate students) and research scientists (PhDs) working together, side by side, to tackle BIG QUESTIONS in the field of developmental and regenerative biology. In particular, we are interested in how neural stem cells in the developing brain divide to generate such an immense diversity of neuron types. Understanding how neuron diversity is generated during development will provide insight into how restore and replace neural tissue damaged by disease or injury."
+  content : "We are a small academic research lab in the Biology department at the University of Virginia in Charlottesville, Virginia. Our lab is located in the Physical Life Sciences Building (PLSB) alongside a number of other academic labs whose research mission is geared toward better understanding fundamental principles governing animal development, from the single-cell zygote stage to formation of mature adults, with complex organs functioning seamlessly in parallel to maintain homeostasis. We are scientists-in-training (undergraduate and graduate students) and research scientists (PhDs) working together, side by side, to tackle BIG QUESTIONS in the field of developmental and regenerative biology. In particular, we are interested in how neural stem cells divide to generate such an immense diversity of neuron types during development and are interested in understanding how environmental factors impact neuron production and diversity. It is our hope that results from our research will provide new insight into methods to restore and replace neural tissue damaged by disease or injury."
   image : "images/DIC-OR-96ALH.png"
   
-
-############################# Diversity #################################
-diversity:
-  enable : true
-  description : "Peace is not merely a distant goal that we seek, but a means by which we arrive at that goal -- Martin Luther King Jr."
-  title : "What we believe in"
-  content : "We believe that anyone and everyone has something important to contribute. We are anti-racist and we pledge to make our work place more equitable, diverse, and inclusive. We respectfully support and encourage each other both professionally and personally and strive to be better listeners and better colleagues. We acknowledge that we all have inherent biases and strive to recognize and correct our inherent biases. We also work to educate our friends, peers, and family members on how to become more understanding and generous with our words."
-  image : "images/fly-cupcakes.png"
   
-
-
-######################### Portfolio ###############################
-portfolio:
-  enable : false
-  bg_image : "images/fly-cupcakes-white.png"
-  title : "What we believe in"
-  content : "Peace IS NOT MERELY A DISTANT GOAL THAT WE SEEK, BUT A MEANS BY WHICH WE ARRIVE AT THAT GOAL--MARTIN LUTHER KING JR. We believe that anyone and everyone has something important to contribute. We are anti-racist and we pledge to make our work place more equitable, diverse, and inclusive. We respectfully support and encourage each other both professionally and personally and strive to be better listeners and better colleagues. We acknowledge that we all have inherent biases and strive to recognize and correct our inherent biases. We also work to educate our friends, peers, and family members on how to become more understanding and generous with our words."
-  button:
-    enable : true
-    label : "UVA bio departmental statement on diversity and inclusion"
-    link : "project"
-
 ######################### Lab ###############################
 lab:
   enable : true
@@ -47,25 +26,16 @@ lab:
   title : "The people who make the magic happen"
   description : ""
   content : ""
-
-
-############################# Service ############################
-service:
-  enable : false
-  # service content comes from "data/*/service.yml" file
-
-
-############################ call to action ###########################
-cta:
-  enable : false
-  bg_image : "images/call-to-action-bg.jpg"
-  title : "We design delightful digital experiences."
-  content : "Read more about what we do and our philosophy of design. Judge for yourself The work and results <br> we’ve achieved for other clients, and meet our highly experienced Team who just love to design."
-  button:
-    enable : true
-    label : "Tell Us Your Story"
-    link : "contact"
-
+  
+  
+############################# Diversity #################################
+diversity:
+  enable : true
+  description : "Peace is not merely a distant goal that we seek, but a means by which we arrive at that goal -- Martin Luther King Jr."
+  title : "What we believe in"
+  content : "We firmly believe that anyone and everyone has something important to contribute to science, society, and beyond and that anyone and everyone can make meaningful contributions. We are anti-racist and we work actively to make our work place and Biology community more equitable, inclusive, and supportive. We listen to and encourage each other both professionally and personally and strive to be better friends and colleagues. We recognize and appreciate our differences and strive to remain open-minded and willing to learn from each other. We believe that words do matter and that kind words providing support are priceless."
+  image : "images/fly-cupcakes.png"
+  
 ############################# Funfacts ###############################
 funfacts:
   enable : false
@@ -96,21 +66,36 @@ funfacts:
   testimonial_slider:
     # testimonial item loop
     - name : "Raymond Roy"
-      image : "images/clients/avater-1.jpg"
+      image : "images/clients/Chhavi-on-scope-small.png"
       designation : "CEO-Themefisher"
-      content : "This Company created an e-commerce site with the tools to make our business a success, with innovative
-                ideas we feel that our site has unique elements that make us stand out from the crowd."
+      content : 
                 
     # testimonial item loop
     - name : "Randi Renin"
-      image : "images/clients/avater-1.jpg"
+      image : "images/clients/nb-acd-small.png"
       designation : "CEO-Themefisher"
-      content : "This Company created an e-commerce site with the tools to make our business a success, with innovative
-                ideas we feel that our site has unique elements that make us stand out from the crowd."
+      content : 
                 
     # testimonial item loop
     - name : "Rose Rio"
-      image : "images/clients/avater-3.jpg"
+      image : "images/clients/picking-larvae-small.png"
       designation : "CEO-Themefisher"
-      content : "This Company created an e-commerce site with the tools to make our business a success, with innovative
-                ideas we feel that our site has unique elements that make us stand out from the crowd."
+      content : 
+
+# testimonial item loop
+    - name : "Rose Rio"
+      image : "images/clients/larval-CNS-small.png"
+      designation : "CEO-Themefisher"
+      content : 
+
+# testimonial item loop
+    - name : "Rose Rio"
+      image : "images/clients/Nahid-confocal-small.png"
+      designation : "CEO-Themefisher"
+      content : 
+
+# testimonial item loop
+    - name : "Rose Rio"
+      image : "images/clients/IPCs-small.png"
+      designation : "CEO-Themefisher"
+      content : 

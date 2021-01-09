@@ -78,12 +78,13 @@
           <div class="testimonial-slider owl-carousel">
             {{ range $data.homepage.funfacts.testimonial_slider }}
             <div>
-              <i class="ion-quote"></i>
-              <p>"{{ .content | markdownify }}"</p>
-              <div class="user">
+              <!--<i class="ion-quote"></i>
+              <p>"{{ .content | markdownify }}"</p>-->
+                <img src="{{ .image | relURL }}" alt="client">
+              <!--<div class="user">
                 <img src="{{ .image | relURL }}" alt="client">
                 <p><span>{{ .name | markdownify }}</span> {{ .designation | markdownify }}</p>
-              </div>
+              </div>-->
             </div>
             {{ end }}
           </div>

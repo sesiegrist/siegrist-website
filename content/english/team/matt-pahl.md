@@ -10,6 +10,4 @@ lab_position: "Grad Student"
 lab_group: "Alumni"
 status: "alumni"
 draft: false
-social:
-type: "member"
 ---

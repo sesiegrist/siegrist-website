@@ -10,7 +10,5 @@ lab_position: "Postdoc"
 lab_group: "Alumni"
 status: "alumni"
 draft: false
-social:
-type: "member"
 ---
 

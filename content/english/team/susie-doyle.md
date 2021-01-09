@@ -9,8 +9,6 @@ photo: "/images/team/doyle.png"
 lab_position: "Senior Research Scientist"
 lab_group: "Postdocs & Scientists"
 status: "current"
-draft: false
-type: "member"
 
 social:
   - icon : "ion-social-facebook-outline" #ionicon pack v2 : https://ionicons.com/v2/

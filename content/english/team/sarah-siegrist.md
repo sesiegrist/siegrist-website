@@ -10,9 +10,6 @@ lab_position: "Principal Investigator"
 lab_group: "PI"
 status: "current"
 draft: false
-social:
-type: "member"
-date: 2020-10-01
 
 ---
 
