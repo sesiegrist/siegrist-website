@@ -1,8 +1,8 @@
 <!-- Header Start -->
 <header class="navigation">
-  <div class="container">
-    <div class="row" style="height:15px;">
-      <div class="col-md-1">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
         <!-- header Nav Start -->
         <nav class="navbar">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -16,8 +16,6 @@
               <img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" width="{{site.Params.logo_width}}" class="img-responsive">
             </a>
           </div>
-	  </div>
-      <div class="col-md-11 col-md-offset-0">
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="navigation">
             <ul class="nav navbar-nav navbar-right">
@@ -33,12 +31,13 @@
                 </ul>
               </li>
               {{ else }}
-              <li><a style="font-size:20px;"  href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+              <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
               {{ end }}
               {{ end }}
-
+			
               <!-- Language List -->
-              <!--{{- if site.IsMultiLingual }}
+              <!-->
+              {{- if site.IsMultiLingual }}
               <li>
                 <select id="select-language" onchange="location = this.value;">
                   {{ $siteLanguages := site.Languages}}
@@ -61,7 +60,7 @@
                   {{ end }}
                 </select>
               </li>
-              {{ end }}-->
+              {{ end }} -->
             </ul>
           </div><!-- /.navbar-collapse -->
         </nav>

@@ -27,8 +27,9 @@
             </div>
           </div>
           <div class="row shuffle-wrapper">
-            {{ range where (where .Site.Pages "Params.status" "current") ".Params.type" "member" }}
+            {{ range where .Site.Pages ".Params.type" "member" }}
             <div class="col-md-4 portfolio-item shuffle-item" data-groups="[&quot;{{ .Params.lab_group | urlize }}&quot;]">
+              {{ if eq .Params.status "current" }}
               <img  class="hover-shadow" src="{{ .Params.Photo | relURL }}" alt="{{ .Title }}">
               <div class="portfolio-hover">
                 <div class="portfolio-content">
@@ -37,6 +38,9 @@
                   <p>{{ .Params.Lab_position }}</p>
                 </div>
               </div>
+              {{ else if eq .Params.lab_group "Alumni"  }}
+                  {{ .Title }}, former {{ .Params.Lab_position }}, current position: {{ .Params.current_position }}
+              {{ end }}
             </div>
             {{ end }}
           </div>

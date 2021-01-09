@@ -1,7 +1,7 @@
 ############################### Banner ##############################
 banner:
   enable : true
-  bg_image : 'images/mitotic-NBs-brain.png'
+  bg_image : 'images/mitotic-NBs-brain4.png'
   bg_overlay : true
   title : "Neural Stem cells"
   content : "-- Developmental Potential and Metabolic Control --"
