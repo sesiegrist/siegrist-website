@@ -1,7 +1,7 @@
 <div class="widget widget-latest-post">
 	{{ $exclude:=.Scratch.Get "exclude" }}
     <h4 class="widget-title"><a href="/team">Lab Members</a></h4>
-    {{ range first 20 (where site.Pages "Type" "member") }}
+    {{ range first 100 (where site.Pages "Type" "member") }}
     {{ if and (eq .Params.Status "current") (ne $exclude .Title) }}
     <div class="media">
       <a class="pull-left" href="{{ .Permalink }}">
