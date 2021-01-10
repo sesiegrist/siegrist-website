@@ -11,15 +11,20 @@
       <div class="col-md-12">
         <div class="block">
           <div class="portfolio-menu">
-            <div class="btn-group btn-group-toggle justify-content-center" data-toggle="buttons">
-              <label class="btn btn-sm btn-primary active">
-                <input type="radio" name="shuffle-filter" value="all" checked="checked">{{ i18n "all" }}
+		  <div class="btn-group btn-group-toggle justify-content-center" data-toggle="buttons">
+              <label class="btn btn-sm btn-primary" active>
+                <input type="radio" name="shuffle-filter" value="all" checked="checked">All
               </label>
               {{ $categories := slice }}
               {{ range where .Site.Pages ".Params.type" "member" }}
                   {{ $categories = $categories | append .Params.lab_group }}
               {{ end }}
-              {{ range ( $categories | uniq ) }}
+              {{ $categories:=uniq $categories }}
+              {{ $fixed_categories:= slice "PI" "Postdocs & Scientists" "Graduate Students" "Undergraduate Students" }}
+              {{ $sorted_categories:=intersect $fixed_categories $categories }}
+              {{ $other:=$categories | complement $sorted_categories }}
+              {{ $sorted_categories:=append $other $sorted_categories }}
+              {{ range $sorted_categories }}
               <label class="btn btn-sm btn-primary">
                 <input type="radio" name="shuffle-filter" value="{{ . | urlize }}">{{ . }}
               </label>
@@ -27,10 +32,10 @@
             </div>
           </div>
           <div class="row shuffle-wrapper">
-            {{ range where .Site.Pages ".Params.type" "member" }}
-            <div class="col-md-4 portfolio-item shuffle-item" data-groups="[&quot;{{ .Params.lab_group | urlize }}&quot;]">
+            {{ range sort (where .Site.Pages ".Params.type" "member") ".Params.status" "desc" }}
+            <div class="portfolio-item shuffle-item" style="padding:10px;" data-groups="[&quot;{{ .Params.lab_group | urlize }}&quot;]">
               {{ if eq .Params.status "current" }}
-              <img  class="hover-shadow" src="{{ .Params.Photo | relURL }}" alt="{{ .Title }}">
+              <img style="width:250px;height:auto;" class="hover-shadow responsive" src="{{ .Params.Photo | relURL }}" alt="{{ .Title }}"/>
               <div class="portfolio-hover">
                 <div class="portfolio-content">
                   <a href="{{ .Params.Image | relURL }}" class="portfolio-popup"><i class="icon ion-search"></i></a>
@@ -39,7 +44,14 @@
                 </div>
               </div>
               {{ else if eq .Params.lab_group "Alumni"  }}
-                  {{ .Title }}, former {{ .Params.Lab_position }}, current position: {{ .Params.current_position }}
+              <div class="content">
+                  <br>
+                  {{ if .Params.current_position }}
+                      <a>{{ .Title }}, former {{ .Params.lab_position }}, current position: {{ .Params.current_position }}</a>
+                  {{ else }}
+                      <a>{{ .Title }}, former {{ .Params.lab_position }}</a>
+                  {{ end }}
+              </div>    
               {{ end }}
             </div>
             {{ end }}

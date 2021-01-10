@@ -7,7 +7,7 @@ email: "?@?"
 bg_image: "images/team/people_background.png"
 photo: "/images/team/woods.png"
 lab_position: "Undergrad Student"
-lab_group: "Undergrad Students"
+lab_group: "Undergraduate Students"
 status: "current"
 draft: false
 ---

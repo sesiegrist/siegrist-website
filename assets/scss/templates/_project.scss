@@ -1,27 +1,60 @@
 .portfolio-work {
-	padding: 80px 0;
+	padding: 80px 0px;
 
 	.block {
 		.portfolio-menu {
 			text-align: center;
 
+			.radio-toolbar input[type="radio"] {
+  				display: none;
+			}
+
+			.radio-toolbar label {
+				display: inline-block;
+				border: 1px solid $border-color;
+				padding: 8px 25px;
+				cursor: pointer;
+				font-size: 20px;
+				color: #333333;
+				outline: 0;
+				color: $light;  // none
+				background: $primary-color; // light
+				margin: 2px;
+				border-radius: 0;
+				@include transition (all, 0.3s, ease);
+				&:hover {
+  					background: darken($primary-color, 15%);
+				}
+			}
+
+			.radio-toolbar input[type="radio"]:checked+label {
+  				background-color: darken($primary-color, 20%);
+			}
+			
 			.btn-group {
 				margin-bottom: 40px;
 
 				label {
 					display: inline-block;
-					border: 1px solid $border-color;
-					padding: 8px 25px;
+					//border: 1px solid $border-color;
+					//padding: 8px 25px;
 					cursor: pointer;
 					font-size: 20px;
-					color: #333333;
-					outline: 0;
-					background: $light;
-					margin: 2px;
-					border-radius: 0;
+					//outline: 0;
+					color: $light;  // none
+					background: $primary-color; // light
+					//margin: 2px;
+					//border-radius: 0;
 					@include transition (all, 0.3s, ease);
-				}
-			}
+					&:hover {
+  						background: darken($primary-color, 15%);
+					}
+				}	
+				.btn.active {
+  						background-color: #bbb;
+  						color: $black;
+					}	
+			}		
 		}
 	}
 }
@@ -43,7 +76,7 @@
 			}
 
 			.portfolio-content {
-				transform: translateY(-5%);
+				transform: translateY(-50%);
 			}
 		}
 	}
@@ -52,7 +85,7 @@
 		position: absolute;
 		height: auto;
 		width: 100%;
-		top: 0;
+		bottom: 0;
 		left: 0;
 		background: rgba(60, 55, 55, 0.5);
 		visibility: hidden;
@@ -65,7 +98,7 @@
 		left: 0;
 		right: 0;
 		top: 50%;
-		transform: translateY(-5%);
+		transform: translateY(-50%);
 		text-align: center;
 		padding: 20px;
 		transition: inherit;
