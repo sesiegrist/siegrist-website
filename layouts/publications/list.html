@@ -4,8 +4,11 @@
 
 {{ $data := index site.Data site.Language.Lang }}
 
-
-            {{ range .Data.Pages }}
+<section class="page-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                {{ range .Data.Pages }}
                 	<p>
                 	{{ delimit .Params.authors ", " }}
                 	({{ .Params.Date.Format "2006" }})
@@ -14,14 +17,18 @@
                 		{{ if ne $index 0 }}
                 		    <a> | </a>
                 		{{ end }}    
-                		<a href={{ $citation.url }}>{{ $citation.label }}</a>
+                		<a href={{ $citation.url }}><b>{{ $citation.label }}</b></a>
                 	{{ end }}
                 	</p>
-            {{ end }}
-            
-                    <div>
-           {{ .Scratch.Set "exclude" .Title }}
-           {{ partial "publications-sidebar.html" . }}
+                {{ end }}
+            </div>
+            <div class="col-md-3">
+                <div>
+                   {{ .Scratch.Set "exclude" .Title }}
+                   {{ partial "publications-sidebar.html" . }}
+                </div>
+            </div>
         </div>
-
+    </div>     
+</section>
 {{ end }}
