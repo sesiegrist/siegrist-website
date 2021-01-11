@@ -145,7 +145,7 @@ weight = 1
 
 [[Languages.en.menu.main]]
 name = "Research"
-URL = "about"
+URL = "research"
 weight = 2
 
 [[Languages.en.menu.main]]

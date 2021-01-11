@@ -1,0 +1,47 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+<div class="page-wrapper">
+  <div class="container">
+    <div class="row">
+			<div class="col-md-12">
+				<div>
+				    <h2>Overview</h2>
+				</div>
+				<div class="post post-single">
+					<div class="post-thumb">
+						<img style="width:600px;height:auto;padding:15px" align="right" src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
+						<a style="font-size:20px;">{{ .Content }}</a>
+					</div>
+				</div>
+				<br style="clear:left;"/>
+				<hr style="border-width:2px">
+				<div>
+					<h2>Research Themes</h2>
+				</div>
+			{{ range .Data.Pages.ByWeight }}
+				<hr style="border-width:2px">
+			<!-- <div class="col-md-6"> -->
+				<div class="post">
+				<div class="post-media">
+					<div class="post-thumb" >
+						<a href="{{ .Permalink }}">
+							<img  class="hover-shadow" style="width:300px;height:auto;padding:10px;margin:10px" align="left" src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
+						</a>
+					</div>
+					    <div>
+					        <h3 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+					        <div class="post-content">
+						        <p>{{ .Content }}</p>
+					            <a href="{{ .Permalink }}" class="btn btn-main">Related Projects</a>
+					        </div>
+					    </div>
+					 </div>   
+				</div>
+			<!-- </div> -->
+			{{ end }}
+    </div>
+  </div>
+</div>      
+{{ end }}

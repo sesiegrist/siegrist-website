@@ -1,12 +1,57 @@
 ################################## About #####################################
 about:
   enable : true
-  image : "images/company/oak-tree-small.png"
-  title : "Overview"
-  content : "In the Siegrist Lab, we are working to understand how the immense number of molecularly and functionally distinct neuron types are produced during development and importantly, how natural environments impact generation of neuron number and diversity in animals living in the real world."
+  image : "images/company/composite-1.png"
+  title : "Basic autonomous and higher voluntary cognitive functions of the brain require production of an immense diversity of neuron types at the right place and time, as well as correct wiring of these neurons into an array of functional neuronal circuits. In the Siegrist Lab, we are working to understand how the immense number of molecularly and functionally distinct neuron types are produced during development and importantly, how natural environments impact generation of neuron number and diversity in animals living in the real world. Research in the Siegrist lab is focused on the following fundamental themes and questions."
+  title : ""
+  content :
 
+
+################################## About #####################################
+about:
+  enable : true
+  image : "images/company/quies-vs-prolif.png"
+  title : "Research Themes"
+  title : "Nutrient-control of neural stem cells in their niche"
+  content : "Neural stem cells, like other stem cells, switch between quiescence and proliferation as part of their normal developmental program, during adult homeostasis, and for repairing tissue after damage. We are working to understand the lineage-specific NSC intrinsic programs that govern NSC proliferation decisions in response to dietary nutrient availability."
   
-      
+
+################################## About #####################################
+about:
+  enable : true
+  image : "images/company/composite-1.png"
+  title : "Research Themes"
+  title : "Intrinsic genetic programs and temporal identity factors that control neural stem proliferation timing and neuronal diversity"
+  content : "Neural stem cells express different transcription factors and signaling molecules over time, which allows for sequential generation of different neuron types over time. We are working to identify additional neural stem cell intrinsic factors that regulate temporal identity and are investigating how dietary nutrients and steroid hormones influence timing of NSC temporal transitions. During development, neural tissues, including the brain, become progressively more sophisticated and complex: neuron numbers increase as well as the molecular and functional diversity of neuron types produced. Yet, at the same time, the capacity for generating different neuron types decrease over time. We are investigating how neurogenesis becomes progressively restricted during development."
+
+
+################################## About #####################################
+about:
+  enable : true
+  image : "images/company/IPCs.png"
+  title : "Research Themes"
+  title : "Neuronal circuits involved in nutrient sensing and brain growth control" 
+  content : "Neurosecretory neurons in the brain synthesize and secrete a myriad of neuropeptides, hormones and other neuromodulatory factors that coordinate tissue growth and homeostasis with overall animal growth and physiology. How are these neuronal circuits architected and how do these circuits affect NSC proliferation to coordinate overall brain growth with overall organismal growth?"
+
+
+################################# About #####################################
+about:
+  enable : true
+  image : "images/company/ectopic-neurogenesis.png"
+  title : "Research Themes"
+  title : "Repair and regeneration of adult neural tissues"
+  content : "Bones and skin have an amazing ability to self-repair. Even the liver can fully regenerate after a partial hepatectomy. In contrast, neural tissues, including the brain have an extremely limited ability to self-repair. We are working to understand the limited regenerative capacity of adult neural tissues and on developing methods to remake brain structures through reinitiation of developmental programs."
+  
+  
+################################# About #####################################
+about:
+  enable : true
+  image : "images/company/ectopic-neurogenesis.png"
+  title : "Research Themes"
+  title : "Repair and regeneration of adult neural tissues"
+  content : "Bones and skin have an amazing ability to self-repair. Even the liver can fully regenerate after a partial hepatectomy. In contrast, neural tissues, including the brain have an extremely limited ability to self-repair. We are working to understand the limited regenerative capacity of adult neural tissues and on developing methods to remake brain structures through reinitiation of developmental programs."
+  
+  
 ################################ feature #####################################
 features:
   enable : false
@@ -45,7 +90,7 @@ features:
 
 #################################### testimonial & mission vision #######################################
 testimonial:
-  enable : true
+  enable : false
   # testimonial content comes from "data/*/homepage.yml" file
 
 mission_vision:

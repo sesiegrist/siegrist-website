@@ -275,7 +275,7 @@ input[type="tel"] {
 
 
 .page-title {
-  padding: 100px 0;
+  padding: 150px 0;
   @extend .overly;
 
   .block {
@@ -283,9 +283,10 @@ input[type="tel"] {
 
     h1 {
       color: $light;
-      font-weight: 200;
+      font-weight: 300;
       letter-spacing: 6px;
       margin-top: 0;
+      font-size: 60px;
       text-transform: capitalize;
     }
 
