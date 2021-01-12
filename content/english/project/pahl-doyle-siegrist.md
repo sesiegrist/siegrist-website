@@ -7,11 +7,10 @@ description: "E93 Integrates Neuroblast Intrinsic State with Developmental Time 
 draft: false
 image : "images/projects/pahl-doyle-siegrist-19.png"
 bg_image: "images/projects/pahl-doyle-siegrist-19-bg.png"
-category: "Termination"
-members: ["Matt Pahl", "Susie Doyle", "Sarah Siegrist"]
-information:
+research_categories: ["Temporal Identity"]
+details:
   - label : "Members"
-    info : ["Matt Pahl", "Susie Doyle", "Sarah Siegrist"]
+    info : ["Matt Pahl", "Susie Doyle"]
   - label : "Paper"
     info : "<a href=https://www.sciencedirect.com/science/article/pii/S0960982219300685?via%3Dihub>Current Biology, Volume 29, Issue 5, 4 March 2019, Pages 750-762.e3</a>"
 ---

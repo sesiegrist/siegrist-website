@@ -3,7 +3,7 @@
 	<div class="media">
     <h4 class="widget-title">Project Details</h4>
           <ul>
-            {{ range $i,$element:=.Params.Information }}
+            {{ range $i,$element:=.Params.details }}
             {{ if eq $element.label "Members" }}
             <li><span>{{ $element.label }} :</span> <strong>                	
             	{{ range $index,$member:=$element.info }}
@@ -14,7 +14,7 @@
             		{{ if $.Site.GetPage $authorlink }}
                 	    <a href="{{ $authorlink | relURL }}">{{ $member }}</a>
                 	{{ else }}    
-                	    <a>{{ $member}}</a>
+                	    <a>{{ $member }}</a>
                 	{{ end }}    
                 {{ end }}
             </strong></li>

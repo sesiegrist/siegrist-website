@@ -7,11 +7,10 @@ description: "Eyeless uncouples mushroom body neuroblast proliferation from diet
 draft: false
 image : "images/projects/sipe-siegrist-17.png"
 bg_image: "images/projects/sipe-siegrist-17-bg.png"
-category: "Dietary Control"
-members: ["Conor Sipe", "Sarah Siegrist"]
-information:
+research_categories: ["Dietary Control"]
+details:
   - label : "Members"
-    info : ["Conor Sipe", "Sarah Siegrist"]
+    info : ["Conor Sipe"]
   - label : "Paper"
     info : "<a href=https://elifesciences.org/articles/26343>Elife, 2017 Aug 9;6</a>"
 ---

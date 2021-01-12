@@ -16,7 +16,7 @@
 				<div class="post post-single">
 					<div class="post-thumb">
 						<img style="width:200px;height:auto;padding:15px" align="left" src="{{ .Params.Photo | relURL }}" alt="{{ .Title }}">
-						{{ .Content }}
+						<a style="padding:15px">{{ .Content }}</a>
 					</div>
 				</div>
 				<br style="clear:left;"/>
@@ -25,27 +25,32 @@
 					<h2>{{ $firstname }}'s Projects</h2>
 				</div>
 			{{ range where .Site.Pages "Type" "project" }}
-                {{ if in .Params.members $member }}
+				{{ $project_page:= . }}
+			    {{ range .Params.details  }}
+                {{ if in .info $member }}
+				<div class="row">
                 <hr>
-			<!-- <div class="col-md-6"> -->
+			    <!-- <div class="col-md-6"> -->
 				<div class="post">
 				<div class="post-media">
 					<div class="post-thumb" >
-						<a href="{{ .Permalink }}">
-							<img  class="hover-shadow" style="width:200px;height:auto;padding:10px;margin:10px" align="left" src="{{ .Params.Image | relURL }}" alt="{{ .Title }}">
+						<a href="{{ $project_page.Permalink }}">
+							<img  class="hover-shadow" style="width:200px;height:auto;padding:10px;margin:15px" align="left" src="{{ $project_page.Params.Image | relURL }}" alt="{{ $project_page.Title }}">
 						</a>
 					</div>
 					    <div>
-					        <h3 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+					        <h3 class="post-title"><a href="{{ $project_page.Permalink }}">{{ $project_page.Title }}</a></h3>
 					        <div class="post-content">
-						        <p>{{ .Summary }}</p>
-						        <a align="right" href="{{ .Permalink }}" class="btn btn-main">{{ i18n "read_more" }}</a>
+						        <p>{{ $project_page.Summary }}</p>
+						        <a align="right" href="{{ $project_page.Permalink }}" class="btn btn-main">{{ i18n "read_more" }}</a>
 					        </div>
 					    </div>
 					 </div>   
 				</div>
-			<!-- </div> -->
-			{{ end }}
+				</div>
+			    <!-- </div> -->
+				{{ end }}
+			    {{ end }}
 			{{ end }}
                 <hr>
 				<div>

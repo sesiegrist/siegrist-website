@@ -1,0 +1,50 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ $data := index site.Data site.Language.Lang }}
+
+<section class="portfolio-single-page section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <div class="row">
+          <div class="project-content mt-50">
+            <img style="width:500px;height:auto;padding:15px" align="left" src="{{ .Params.Image | relURL }}" alt="">
+            <a style="padding:15px">{{ .Content }}</a>
+	      </div>
+	    </div>
+	    <div class="row">
+	    	<hr>
+	    	<h2>Projects: {{ .Params.category }}</h2>
+	    	<hr>
+	    </div>
+	    <div class="row">
+	    	{{ $theme_category:=.Params.category }}
+	        {{ range where .Site.Pages "Type" "project" }}
+		   		{{ if in .Params.research_categories $theme_category }}
+				<div class="col-md-3 portfolio-item">
+			    <div class="media">
+      				<a href="{{ .Permalink }}">
+        			<img class="media-object hover-shadow" style="margin:5px;width:180px;height:auto" src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
+      				</a>
+      				<div class="media-body">
+        				<h4 class="media-heading"><a href="{{ .Permalink }}">{{ .Name }}</a></h4>
+      				</div>
+    			</div>
+    			</div>
+  				{{ end }}
+	    	{{ end }}
+    	</div>
+	  </div>
+      <div class="col-md-3">
+        <div>
+           {{ .Scratch.Set "exclude" .Title }}
+           {{ partial "research-sidebar.html" . }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

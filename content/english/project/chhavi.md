@@ -7,11 +7,11 @@ description: "this is meta description"
 draft: false
 image : "images/projects/quies-prolifer.png"
 bg_image: "images/projects/quies-prolifer.png"
-category: "Quiescence"
-members: ["Chhavi Sood", "Sarah Siegrist"]
-information:
+research_categories: ["Dietary Control"]
+tag: ["nutrient,temporal"]
+details:
   - label : "Members"
-    info : ["Chhavi Sood", "Sarah Siegrist"]
+    info : ["Chhavi Sood"]
   - label : "Paper"
     info : ""
 ---

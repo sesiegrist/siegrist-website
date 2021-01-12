@@ -7,11 +7,10 @@ description: "Hippo Signaling"
 draft: false
 image : "images/portfolio/work2.jpg"
 bg_image: "images/featue-bg.jpg"
-category: "Dietary Control"
-members: ["Nahid Md Ausrafuggaman", "Sarah Siegrist"]
-information:
+research_categories: ["Dietary Control"]
+details:
   - label : "Members"
-    info : ["Nahid Md Ausrafuggaman", "Sarah Siegrist"]
+    info : ["Nahid Md Ausrafuggaman"]
   - label : "Paper"
     info : ""
 ---

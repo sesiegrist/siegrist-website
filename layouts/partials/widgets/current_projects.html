@@ -5,9 +5,9 @@
     {{ if and (.Params.current) (ne .Params.Title $exclude ) }}
     <div class="media">
       <a class="pull-left" href="{{ .Permalink }}">
-        <img class="media-object hover-shadow" src="{{ .Params.Image | relURL }}" alt="{{ .Title }}">
+        <img class="media-object hover-shadow" style="margin:5px;" src="{{ .Params.Image | relURL }}" alt="{{ .Title }}">
       </a>
-      <div class="media-body">
+      <div class="media-body" style="padding-top:10px;">
         <h4 class="media-heading"><a href="{{ .Permalink }}">{{ .Name }}</a></h4>
         <p>{{ .Summary | truncate 75 }}</p>
       </div>

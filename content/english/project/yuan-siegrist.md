@@ -7,11 +7,10 @@ description: "Dilp-2-mediated PI3-kinase activation coordinates reactivation of 
 draft: false
 image : "images/projects/yuan-siegrist-20.png"
 bg_image: "images/projects/yuan-siegrist-20-bg.png"
-category: "Glia"
-members: ["Xin Yuan", "Conor Sipe", "Miyuki Suzawa", "Michelle Bland", "Sarah Siegrist"]
-information:
+research_categories: ["Dietary Control"]
+details:
   - label : "Members"
-    info : ["Xin Yuan", "Conor Sipe", "Miyuki Suzawa", "Michele Bland", "Sarah Siegrist"]
+    info : ["Xin Yuan", "Conor Sipe", "Miyuki Suzawa", "Michele Bland"]
   - label : "Paper"
     info : "<a href='https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000721'>PLoS Biology, May 28 2020</a>"
 ---

@@ -17,7 +17,7 @@
               </label>
               {{ $categories := slice }}
               {{ range .Data.Pages }}
-              {{ $categories = $categories | append .Params.Category }}
+                {{ $categories = $categories | union .Params.research_categories }}
               {{ end }}
               {{ range ( $categories | uniq ) }}
               <label class="btn btn-sm btn-primary">
@@ -28,16 +28,19 @@
           </div>
           <div class="row shuffle-wrapper">
             {{ range .Data.Pages }}
-            <div class="col-md-4 portfolio-item shuffle-item" data-groups="[&quot;{{ .Params.Category | urlize }}&quot;]">  
-              <img src="{{ .Params.Image | relURL }}" alt="{{ .Title }}">
+            {{ $project_page:= . }}
+            {{ range .Params.research_categories }}
+            <div class="col-md-4 portfolio-item shuffle-item" data-groups="[&quot;{{ . | urlize }}&quot;]">
+              <img src="{{ $project_page.Params.Image | relURL }}" alt="{{ $project_page.Title }}">
               <div class="portfolio-hover">
                 <div class="portfolio-content">
-                  <a href="{{ .Params.Image | relURL }}" class="portfolio-popup"><i class="icon ion-search"></i></a>
-                  <a class="h3" href="{{ .Permalink }}">{{ .Title }}</a>
-                  <p>{{ .Params.Description }}</p>
+                  <a href="{{ $project_page.Params.Image | relURL }}" class="portfolio-popup"><i class="icon ion-search"></i></a>
+                  <a class="h3" href="{{ $project_page.Permalink }}">{{ $project_page.Title }}</a>
+                  <p>{{ $project_page.Params.Description }}</p>
                 </div>
               </div>
             </div>
+            {{ end }}
             {{ end }}
           </div>
         </div>
