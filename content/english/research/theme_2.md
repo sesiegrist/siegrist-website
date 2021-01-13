@@ -2,6 +2,7 @@
 type: "research"
 title: "Intrinsic genetic programs and temporal identity factors that control neural stem proliferation timing and neuronal diversity"
 image: "images/research/termination-1.png"
+bg_image: "images/projects/E93-larval-brain-5.png"
 category: "Temporal Identity"
 weight: 20
 ---

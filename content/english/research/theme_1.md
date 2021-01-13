@@ -2,6 +2,7 @@
 type: "research"
 title: "Nutrient-control of neural stem cells in their niche"
 image: "images/research/quiesc-vs-prolif.png"
+bg_image: "images/projects/NB-in-niche.png"
 category: "Dietary Control"
 weight: 10
 ---

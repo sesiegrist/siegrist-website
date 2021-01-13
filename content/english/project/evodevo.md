@@ -7,7 +7,7 @@ description: "this is meta description"
 draft: false
 image : ""
 bg_image: ""
-research_categories: ["Evolution"]
+research_categories: ["EvoDevo"]
 tag: ["evolution"]
 details:
   - label : "Members"
