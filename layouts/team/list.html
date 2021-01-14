@@ -6,97 +6,77 @@
 
 <!-- Portfolio Start -->
 <section class="portfolio-work">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="block">
-          <div class="portfolio-menu">
-		  <div class="btn-group btn-group-toggle justify-content-center" data-toggle="buttons">
-              <label class="btn btn-sm btn-primary" active>
-                <input type="radio" name="shuffle-filter" value="all" checked="checked">All
-              </label>
-              {{ $categories := slice }}
-              {{ range where .Site.Pages ".Params.type" "member" }}
-                  {{ $categories = $categories | append .Params.lab_group }}
-              {{ end }}
-              {{ $categories:=uniq $categories }}
-              {{ $fixed_categories:= slice "PI" "Postdocs & Scientists" "Graduate Students" "Undergraduate Students" }}
-              {{ $sorted_categories:=intersect $fixed_categories $categories }}
-              {{ $other:=$categories | complement $sorted_categories }}
-              {{ $sorted_categories:=append $other $sorted_categories }}
-              {{ range $sorted_categories }}
-                {{ if eq . "Alumni" }}
-                	<label class="btn btn-sm btn-primary btn-alumni">
-                {{ else }}
-                	<label class="btn btn-sm btn-primary">
-                {{ end }}
-                      <input type="radio" class="hide-show-content" name="shuffle-filter" value="{{ . | urlize }}">{{ . }}
-                </label>
-              {{ end }}
-              
-              <div class="list-alumni">
-            	{{ range sort (where (where .Site.Pages ".Params.type" "member") ".Params.status" "==" "alumni" ) ".Params.status" "desc" }}
-            		<div class="row" style="text-align:left;">
-            			<div class="col-md-3">
-            				<a>{{ .Title }}</a>
-            			</div>
-            			<div class="col-md-3">
-            				<a>former {{ .Params.lab_position }}</a>
-            			</div>
-            			<div class="col-md-6">
-            				{{ if .Params.current_position }}
-            					<a>current position: {{ .Params.current_position }}</a>
-            				{{ end }}
-            			</div>
-				  	</div>
-				{{ end }}
-              </div>
-              
-			<!--
-            </div>
-          </div> -->
-          
-          <div class="row shuffle-wrapper">
-            {{ range sort (where .Site.Pages ".Params.type" "member") ".Params.status" "desc" }}
-            <div class="portfolio-item shuffle-item" style="padding:10px;" data-groups="[&quot;{{ .Params.lab_group | urlize }}&quot;]">
-              {{ if eq .Params.status "current" }}
-              <img style="width:250px;height:auto;" class="hover-shadow responsive" src="{{ .Params.Photo | relURL }}" alt="{{ .Title }}"/>
-              <div class="portfolio-hover">
-                <div class="portfolio-content">
-                  <a href="{{ .Params.Image | relURL }}" class="portfolio-popup"><i class="icon ion-search"></i></a>
-                  <a class="h3" href="{{ .Permalink }}">{{ .Title }}</a>
-                  <p>{{ .Params.Lab_position }}</p>
-                </div>
-              </div>
-              {{ end }}
-            </div>
-            {{ end }}
-          </div>
-          <!--
-          <div class="portfolio-content list-alumni">
-            	{{ range sort (where (where .Site.Pages ".Params.type" "member") ".Params.status" "==" "alumni" ) ".Params.status" "desc" }}
-            		<div class="row">
-            			<div class="col-md-3">
-            				<a>{{ .Title }}</a>
-            			</div>
-            			<div class="col-md-3">
-            				<a>former {{ .Params.lab_position }}</a>
-            			</div>
-            			<div class="col-md-6">
-            				{{ if .Params.current_position }}
-            					<a>current position: {{ .Params.current_position }}</a>
-            				{{ end }}
-            			</div>
-				  	</div>
-				{{ end }}
-           </div>
-		   -->
-          
-        </div>
-      </div>
-
-    </div></div></div>
-  </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+        		<div class="block">
+          			<div class="portfolio-menu">
+		    			<div class="btn-group btn-group-toggle justify-content-center" data-toggle="buttons">
+              				
+              				<label class="btn btn-sm btn-primary" active>
+                				<input type="radio" name="shuffle-filter" value="all" checked="checked">All
+              				</label>
+              				{{ $categories := slice }}
+              				{{ range where .Site.Pages ".Params.type" "member" }}
+              					{{ $categories = $categories | append .Params.lab_group }}
+              				{{ end }}
+              				{{ $categories:=uniq $categories }}
+              				{{ $fixed_categories:= slice "PI" "Postdocs & Scientists" "Graduate Students" "Undergraduate Students" }}
+              				{{ $sorted_categories:=intersect $fixed_categories $categories }}
+              				{{ $other:=$categories | complement $sorted_categories }}
+              				{{ $sorted_categories:=append $other $sorted_categories }}
+              				{{ range $sorted_categories }}
+              					{{ if eq . "Alumni" }}
+                  					<label class="btn btn-sm btn-primary btn-alumni">
+                				{{ else }}
+                  					<label class="btn btn-sm btn-primary">
+                				{{ end }}
+                      				<input type="radio" class="hide-show-content" name="shuffle-filter" value="{{ . | urlize }}">{{ . }}
+                				</label>
+              				{{ end }}
+              				
+              				<div class="list-alumni">
+            					{{ range sort (where (where .Site.Pages ".Params.type" "member") ".Params.status" "==" "alumni" ) ".Params.status" "desc" }}
+            						<div class="row" style="text-align:left;">
+            							<div class="col-md-4">
+            								<h3>{{ .Title }}</h3>
+            							</div>
+            							<div class="col-md-4">
+            								<h3>former {{ .Params.lab_position }}<h3>
+            							</div>
+            							<div class="col-md-4">
+            								{{ if .Params.current_position }}
+            									<h3>currently at {{ .Params.current_position }}<h3>
+            								{{ end }}
+            							</div>
+				  					</div>
+								{{ end }}
+              				</div>
+                    
+                        </div>
+                    </div>
+                        	
+          			<div class="row shuffle-wrapper">
+            			{{ range sort (where .Site.Pages ".Params.type" "member") ".Params.status" "desc" }} 
+    						<div class="portfolio-item shuffle-item" style="padding:10px;" data-groups="[&quot;{{ .Params.lab_group | urlize }}&quot;]">
+         						{{ if eq .Params.status "current" }}
+              						<img style="width:240px;height:auto;" class="hover-shadow responsive" src="{{ .Params.Photo | relURL }}" alt="{{ .Title }}"/>
+              						<div class="portfolio-hover">
+        								<div class="portfolio-content">
+          									<a href="{{ .Params.Photo | relURL }}" class="portfolio-popup"><i class="icon ion-search"></i></a>
+                  							<a class="h3" href="{{ .Permalink }}">{{ .Title }}</a>
+                  							<p>{{ .Params.Lab_position }}</p>
+                						</div>
+              						</div>
+              					{{ end }}
+    						</div>
+            			{{ end }}
+          			</div>
+        
+        		</div>
+      		</div>
+		</div>
+	</div>
 </section>
 
 <style>

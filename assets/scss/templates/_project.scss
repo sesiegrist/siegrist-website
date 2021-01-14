@@ -56,18 +56,12 @@
 				}
 				.list-alumni {
 					display: none;
-					//width: 0px;
-					//height: 0px;
 				}
 				.btn-alumni.active {
-					color: #0f0;
-					
 					~ .list-alumni {
 						display: block;
-						//width: auto;
-						//height: 200px;
   						background-color: #fff;
-  						color: $red;
+  						color: $primary-color;
 					}
 				}		
 			}		
