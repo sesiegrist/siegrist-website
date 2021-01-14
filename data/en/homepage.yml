@@ -5,6 +5,7 @@ banner:
   bg_overlay : true
   title : "Neural Stem cells"
   content : "-- Developmental Potential and Metabolic Control --"
+  message : "We are hiring! Contact us if your are interested in joining our team."
   button:
     enable : true
     label : "Our Research"
