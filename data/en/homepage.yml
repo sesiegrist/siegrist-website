@@ -7,8 +7,8 @@ banner:
   content : "-- Developmental Potential and Metabolic Control --"
   button:
     enable : true
-    label : "Our Research Projects"
-    link : "project"
+    label : "Our Research"
+    link : "research"
 
 ############################# About #################################
 about:

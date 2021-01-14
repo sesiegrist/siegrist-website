@@ -11,7 +11,7 @@ authors: [
    ]
 date: "2010-04-13"
 links:
-  - label : "Current Biology 20 (7), 643-648"
+  - label : "Current Biology 20(7), 643-648"
     url : "https://www.cell.com/current-biology/fulltext/S0960-9822(10)00156-9?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0960982210001569%3Fshowall%3Dtrue"
   - label : "PubMed"
     url : "https://pubmed.ncbi.nlm.nih.gov/20346676/"

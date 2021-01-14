@@ -2,7 +2,7 @@
 layout: "project"
 type: "project"
 current: false
-title: "Termination of Neurogenesis"
+title: "Imp, Syp and E93 regulate timing of neurogenesis"
 description: "E93 Integrates Neuroblast Intrinsic State with Developmental Time to Terminate MB Neurogenesis via Autophagy"
 draft: false
 image : "images/projects/pahl-doyle-siegrist-19.png"

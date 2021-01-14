@@ -27,12 +27,12 @@
 			{{ range where .Site.Pages "Type" "project" }}
 				{{ $project_page:= . }}
 			    {{ range .Params.details  }}
-                {{ if in .info $member }}
-				<div class="row">
-                <hr>
-			    <!-- <div class="col-md-6"> -->
-				<div class="post">
-				<div class="post-media">
+                	{{ if in .info $member }}
+						<div class="row">
+                			<hr>
+			    			<!-- <div class="col-md-6"> -->
+							<div class="post">
+								<div class="post-media">
 					<div class="post-thumb" >
 						<a href="{{ $project_page.Permalink }}">
 							<img  class="hover-shadow" style="width:200px;height:auto;padding:10px;margin:15px" align="left" src="{{ $project_page.Params.Image | relURL }}" alt="{{ $project_page.Title }}">
@@ -46,36 +46,38 @@
 					        </div>
 					    </div>
 					 </div>   
-				</div>
-				</div>
-			    <!-- </div> -->
-				{{ end }}
+							</div>
+						</div>
+			    	<!-- </div> -->
+					{{ end }}
 			    {{ end }}
 			{{ end }}
-                <hr>
+
+			{{ $pub_pages:=(where (where .Site.Pages "Type" "publication") ".Params.authors" "intersect" (slice $author))  }}
+			{{ if gt (len $pub_pages) 0 }}
+		        <hr>
 				<div>
 					<h2>{{ $firstname }}'s Publications</h2>
 				</div>
 				<hr>
-			{{ range where .Site.Pages "Type" "publication" }}
-                {{ if in .Params.authors $author }}
-                	<p>
-                	{{ $authors:=delimit .Params.authors ", " }}
-                	{{ $otherauthors:=split $authors $author }}
-                	{{ index $otherauthors 0 }}
-                	<a><b>{{ $author }}</b></a>
-                	{{ index $otherauthors 1 }}
-                	({{ .Params.Date.Format "2006" }})
-                	{{ .Params.title }}
-                	{{ range $index,$citation:=.Params.links }}
-                		{{ if ne $index 0 }}
-                		    <a> | </a>
-                		{{ end }}    
+			{{ end }}
+			{{ range $i,$page:=$pub_pages }}
+				<p>
+                {{ $authors:=delimit $page.Params.authors ", " }}
+            	{{ $otherauthors:=split $authors $author }}
+            	{{ index $otherauthors 0 }}
+            	<a><b>{{ $author }}</b></a>
+            	{{ index $otherauthors 1 }}
+            	({{ $page.Params.Date.Format "2006" }})
+                {{ $page.Params.title }}
+                {{ range $index,$citation:=$page.Params.links }}
+                	{{ if ne $index 0 }}
+                		<a> | </a>
+                	{{ end }}    
                 		<a href={{ $citation.url }}><b>{{ $citation.label }}</b></a>
                 	{{ end }}
                 	</p>
-			    {{ end }}
-			{{ end }}
+				{{ end }}
 			    <hr>
 
 			</div>

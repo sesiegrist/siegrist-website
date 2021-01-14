@@ -10,7 +10,7 @@ bg_image: "images/featue-bg.jpg"
 research_categories: ["Dietary Control"]
 details:
   - label : "Members"
-    info : ["Nahid Md Ausrafuggaman"]
+    info : ["Nahid Md Ausrafuggaman","Katie Woods"]
   - label : "Paper"
     info : ""
 ---

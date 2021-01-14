@@ -29,7 +29,7 @@
           <div class="row shuffle-wrapper">
             {{ range .Data.Pages }}
             {{ $project_page:= . }}
-            {{ range .Params.research_categories }}
+            <!-- {{ range .Params.research_categories }} -->
             <div class="col-md-4 portfolio-item shuffle-item" data-groups="[&quot;{{ . | urlize }}&quot;]">
               <img src="{{ $project_page.Params.Image | relURL }}" alt="{{ $project_page.Title }}">
               <div class="portfolio-hover">
@@ -40,7 +40,7 @@
                 </div>
               </div>
             </div>
-            {{ end }}
+            <!-- {{ end }} -->
             {{ end }}
           </div>
         </div>
