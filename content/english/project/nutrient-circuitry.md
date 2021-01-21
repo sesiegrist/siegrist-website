@@ -2,7 +2,7 @@
 layout: "project"
 type: "project"
 current: true
-title: "Neuronal circuits regulate neuroblast proliferation"
+title: "Nutrient-regulated neuronal circuits and insulin signaling"
 description: "this is meta description"
 draft: false
 image : ""

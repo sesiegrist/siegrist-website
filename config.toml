@@ -57,6 +57,7 @@ membersidebar = ["member_projects"]
 projectsidebar = ["project_info", "current_projects"]
 publicationssidebar = ["publication_news"]
 researchsidebar = ["research_themes"]
+contactsidebar = ["links"]
 
 #################### default parameters ################################
 [params]

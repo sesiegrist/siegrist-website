@@ -1,6 +1,7 @@
 ---
 type: "research"
-title: "Neuronal circuits involved in nutrient sensing and brain growth control" 
+title: "Neuronal circuits involved in nutrient sensing and brain growth control"
+lab_position: "- Neuronal Circuits -"
 image: "images/research/IPCs.png"
 category: "Neuronal Circuits"
 weight: 30

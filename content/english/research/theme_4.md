@@ -1,6 +1,7 @@
 ---
 type: "research"
 title : "Repair and regeneration of adult neural tissues"
+lab_position: "- Repair & Regeneration -"
 image : "images/research/ectopic-neurogenesis-1.png"
 category: "Repair & Regeneration"
 weight: 40

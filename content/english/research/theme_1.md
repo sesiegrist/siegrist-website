@@ -1,6 +1,7 @@
 ---
 type: "research"
 title: "Nutrient-control of neural stem cells in their niche"
+lab_position: "-- Dietary Control --"
 image: "images/research/quiesc-vs-prolif.png"
 bg_image: "images/projects/NB-in-niche.png"
 category: "Dietary Control"

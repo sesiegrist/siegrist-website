@@ -2,7 +2,7 @@
 layout: "project"
 type: "project"
 current: true
-title: "Dietary control of Stem Cell Proliferation"
+title: "Lineage-specific intrinsic factors"
 description: "Eyeless uncouples mushroom body neuroblast proliferation from dietary amino acids in Drosophila"
 draft: false
 image : "images/projects/sipe-siegrist-17.png"
