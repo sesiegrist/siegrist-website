@@ -31,17 +31,21 @@
 						<hr>
 						<div class="row">
 							<div class="post">
-								<div class="post-media" style="padding:15px">
+								<div class="col-md-3">
+								<div class="post-media">
 									<div class="post-thumb" >
 										<a href="{{ $project_page.Permalink }}">
-											<img  class="hover-shadow" style="width:200px;height:auto;padding:10px;margin:15px" align="left" src="{{ $project_page.Params.Image | relURL }}" alt="{{ $project_page.Title }}">
+											<img  class="hover-shadow" style="width:200px;height:auto;padding:5px;"  src="{{ $project_page.Params.Image | relURL }}" alt="{{ $project_page.Title }}">
 										</a>
 									</div>
+								</div>
+								</div>
+								<div class="col-md-9">	
 					    			<div>
-					        			<h3 class="post-title"><a href="{{ $project_page.Permalink }}">{{ $project_page.Title }}</a></h3>
+					        			<h3 class="post-title" style="margin-top:0px;margin:0px"><a href="{{ $project_page.Permalink }}">{{ $project_page.Title }}</a></h3>
 					        			<div class="post-content">
 						        			<p>{{ $project_page.Summary }}</p>
-						        			<a align="right" href="{{ $project_page.Permalink }}" class="btn btn-main">{{ i18n "read_more" }}</a>
+						        			<a href="{{ $project_page.Permalink }}" class="btn btn-main">{{ i18n "read_more" }}</a>
 					        			</div>
 					    			</div>
 					 			</div>   

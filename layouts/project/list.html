@@ -8,7 +8,7 @@
 <section class="portfolio-work">
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
+      <!-- <div class="col-md-12"> -->
         <div class="block">
           <div class="portfolio-menu">
             <div class="btn-group btn-group-toggle justify-content-center" data-toggle="buttons">
@@ -30,9 +30,9 @@
             {{ range .Data.Pages }}
             {{ $project_page:= . }}
             <!-- {{ range .Params.research_categories }} -->
-            <div class="col-md-4 portfolio-item shuffle-item" style="padding:10px;" data-groups="[&quot;{{ . | urlize }}&quot;]">
-              <img src="{{ $project_page.Params.Image | relURL }}" alt="{{ $project_page.Title }}">
-              <div class="portfolio-hover">
+            <div class="portfolio-item shuffle-item" style="padding:10px" data-groups="[&quot;{{ . | urlize }}&quot;]">
+              <img class="hover-shadow responsive" src="{{ $project_page.Params.Image | relURL }}" style="border: 2px solid #bbb;border-radius:10px" alt="{{ $project_page.Title }}">
+              <div class="portfolio-hover" style="border-radius:10px">
                 <div class="portfolio-content">
                   <a href="{{ $project_page.Params.Image | relURL }}" class="portfolio-popup"><i class="icon ion-search"></i></a>
                   <a class="h3" href="{{ $project_page.Permalink }}">{{ $project_page.Title }}</a>
@@ -44,7 +44,7 @@
             {{ end }}
           </div>
         </div>
-      </div>
+      <!-- </div> -->
     </div>
   </div>
 </section>

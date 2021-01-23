@@ -11,7 +11,7 @@ research_categories: ["quiescence vs proliferation"]
 tag: ["nutrient,temporal"]
 details:
   - label : "Members"
-    info : ["Chhavi Sood","Virginia Justis", "Susan Doyle"]
+    info : ["Chhavi Sood","Virginia Justis", "Susie Doyle"]
   - label : "Paper"
     info : " --  in revision"
 ---

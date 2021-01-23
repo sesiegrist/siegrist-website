@@ -11,7 +11,7 @@ research_categories: ["quiescence vs proliferation"]
 tag: ["nutrient,temporal"]
 details:
   - label : "Members"
-    info : ["Susan Doyle, Matthew Pahl, Lindsay Ardiff, and Sarah Siegrist"]
+    info : ["Susie Doyle", "Matt Pahl", "Lindsay Ardiff", "Sarah Siegrist"]
   - label : "Paper"
     info : "<a href=https://dev.biologists.org/content/144/5/820.long>Development, Volume 144, Issue 5, March 2017, Pages 820-829</a>"
 ---

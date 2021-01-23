@@ -8,7 +8,7 @@
 <section class="portfolio-work">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
+			<!-- <div class="col-md-12">-->
         		<div class="block">
           			<div class="portfolio-menu">
 		    			<div class="btn-group btn-group-toggle justify-content-center" data-toggle="buttons">
@@ -60,8 +60,8 @@
             			{{ range sort (where .Site.Pages ".Params.type" "member") ".Params.status" "desc" }} 
     						<div class="portfolio-item shuffle-item" style="padding:10px;" data-groups="[&quot;{{ .Params.lab_group | urlize }}&quot;]">
          						{{ if eq .Params.status "current" }}
-              						<img style="width:240px;height:auto;" class="hover-shadow responsive" src="{{ .Params.Photo | relURL }}" alt="{{ .Title }}"/>
-              						<div class="portfolio-hover">
+              						<img class="hover-shadow responsive" style="width:240px;height:auto;border-radius:10px" src="{{ .Params.Photo | relURL }}" alt="{{ .Title }}"/>
+              						<div class="portfolio-hover" style="border-radius:10px">
         								<div class="portfolio-content">
           									<a href="{{ .Params.Photo | relURL }}" class="portfolio-popup"><i class="icon ion-search"></i></a>
                   							<a class="h3" href="{{ .Permalink }}">{{ .Title }}</a>
@@ -73,7 +73,7 @@
             			{{ end }}
           			</div>
         
-        		</div>
+        		<!-- </div> -->
       		</div>
 		</div>
 	</div>
