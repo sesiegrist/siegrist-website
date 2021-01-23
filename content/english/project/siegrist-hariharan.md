@@ -6,11 +6,11 @@ title: "Termination of Neurogenesis"
 description: "Inactivation of both Foxo and reaper promotes long-term adult neurogenesis in Drosophila"
 draft: false
 image : "images/projects/termination-model.png"
-bg_image: "images/projects/termination.png"
+bg_image: "images/projects/E93-larval-brain-5.png"
 research_categories: ["Temporal Identity"]
 details:
   - label : "Members"
-    info : ["Sarah Siegrist", "Iswar Hariharan"]
+    info : ["Sarah Siegrist"]
   - label : "Paper"
     info : "<a href=https://www.cell.com/current-biology/fulltext/S0960-9822(10)00156-9>Current Biology, Volume 20, Issue 7, 25 March 2010, Pages 643-648</a>"
 ---

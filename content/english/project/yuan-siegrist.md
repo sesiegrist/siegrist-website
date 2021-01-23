@@ -2,12 +2,12 @@
 layout: "project"
 type: "project"
 current: false
-title: "Stem Cell Reactivation"
+title: "Reactivation from quiescence"
 description: "Dilp-2-mediated PI3-kinase activation coordinates reactivation of quiescent neuroblasts with growth of their glial stem cell niche"
 draft: false
-image : "images/projects/yuan-siegrist-20.png"
-bg_image: "images/projects/yuan-siegrist-20-bg.png"
-research_categories: ["Dietary Control"]
+image : "images/projects/Yuan-cartoon.png"
+bg_image: "images/projects/NB-in-niche.png"
+research_categories: ["quiescence vs proliferation"]
 details:
   - label : "Members"
     info : ["Xin Yuan", "Conor Sipe", "Miyuki Suzawa", "Michele Bland"]

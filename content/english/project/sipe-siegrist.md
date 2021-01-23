@@ -2,12 +2,12 @@
 layout: "project"
 type: "project"
 current: true
-title: "Lineage-specific intrinsic factors"
+title: "Ey and lineage-specific programs"
 description: "Eyeless uncouples mushroom body neuroblast proliferation from dietary amino acids in Drosophila"
 draft: false
-image : "images/projects/sipe-siegrist-17.png"
-bg_image: "images/projects/sipe-siegrist-17-bg.png"
-research_categories: ["Dietary Control"]
+image : "images/projects/Sipe-cartoon.png"
+bg_image: "images/projects/NB-in-niche.png"
+research_categories: ["quiescence vs proliferation"]
 details:
   - label : "Members"
     info : ["Conor Sipe"]

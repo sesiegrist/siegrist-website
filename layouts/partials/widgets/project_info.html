@@ -1,26 +1,31 @@
 <div class="widget widget-latest-post">
 	{{ $exclude:=.Scratch.Get "exclude" }}
+    {{ $current_members:=slice }}
+    {{ range where (where .Site.Pages "Type" "member") ".Params.status" "==" "current" }}
+		{{ $current_members = $current_members | append .Title }}
+    {{ end }}
+
 	<div class="media">
-    <h4 class="widget-title">Project Details</h4>
-          <ul>
+    	<h4 class="widget-title">Project Details</h4>
+        <ul>
             {{ range $i,$element:=.Params.details }}
             {{ if eq $element.label "Members" }}
-            <li><span>{{ $element.label }} :</span> <strong>                	
+            <li><span>{{ $element.label }} :</span>                	
             	{{ range $index,$member:=$element.info }}
             		{{ $authorlink:=path.Join "team/" ( $member | urlize) }}
-            		{{ if $.Site.GetPage $authorlink }}
-                	    <a href="{{ $authorlink | relURL }}">{{ if (ne $index 0) }}{{ ", " }}{{end}}{{ $member }}</a>
+            		{{ if and ($.Site.GetPage $authorlink) ( in $current_members $member ) }}
+                	    <a href="{{ $authorlink | relURL }}"><strong>{{ if (ne $index 0) }}{{ ", " }}{{end}}{{ $member }}</strong></a>
                 	{{ else }}    
-                	    <a>{{ $member }}</a>
-                	{{ end }}    
+                	    <a>{{ if (ne $index 0) }}{{ ", " }}{{end}}{{ $member }}</a>
+                	{{ end }}
                 {{ end }}
-            </strong></li>
+            </li>
             {{ else }}
             	{{ if .info }} 
                		<li><span>{{ .label }} :</span> <strong>{{ .info | markdownify }}</strong></li>
             	{{ end }}
             {{ end }}
             {{ end }}
-          </ul>
-    </div>
-  </div>
+        </ul>
+	</div>
+</div>

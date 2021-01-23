@@ -1,7 +1,6 @@
 ---
 type: "research"
-title: "Temporal identity factors & neural stem 
-proliferation"
+title: "Temporal identity factors & neurogenesis termination"
 lab_position: "- Temporal Identity -"
 image: "images/research/termination-1.png"
 bg_image: "images/projects/E93-larval-brain-5.png"

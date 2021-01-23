@@ -1,6 +1,6 @@
 ---
 type: "research"
-title : "Genetic variation in neurodevelopmental programs"
+title : "Genetic variation in neural developmental programs"
 lab_position: "- Evo Devo -"
 image : "images/research/fly-pear.png"
 bg_image: "images/projects/fly-grass.png"

@@ -1,8 +1,8 @@
 ---
 type: "member"
 layout: "team"
-title: "Victoria Justis"
-publish_name: "Victoria Justis"
+title: "Virginia Justis"
+publish_name: "Virginia Justis"
 bg_image: ""
 photo: ""
 lab_position: "Undergrad Student"

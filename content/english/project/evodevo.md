@@ -2,7 +2,7 @@
 layout: "project"
 type: "project"
 current: true
-title: "Evolution of neural stem cell proliferation control"
+title: "Evolution of neurodevelopmental programs"
 description: "this is meta description"
 draft: false
 image : "images/projects/Maine.png"
