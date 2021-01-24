@@ -194,7 +194,7 @@ weight = 8
 # footer menu
 [[Languages.en.menu.footer]]
 name = "Research"
-URL = "about"
+URL = "research"
 weight = 1
 
 [[Languages.en.menu.footer]]
