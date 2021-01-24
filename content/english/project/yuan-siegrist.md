@@ -7,7 +7,7 @@ description: "Dilp-2-mediated PI3-kinase activation coordinates reactivation of 
 draft: false
 image : "images/projects/Yuan-cartoon.png"
 bg_image: "images/projects/NB-in-niche.png"
-research_categories: ["quiescence vs proliferation"]
+research_categories: ["Quiescence vs Proliferation"]
 details:
   - label : "Members"
     info : ["Xin Yuan", "Conor Sipe", "Miyuki Suzawa", "Michele Bland"]

@@ -6,6 +6,17 @@
     {{ end }}
 
 	<div class="media">
+    	<h4 class="widget-title">Research Theme</h4>
+    	{{ range .Params.research_categories }}
+    		{{ $research_theme:= . }}
+    		{{ range where $.Site.Pages "Type" "research" }}
+    			{{ if eq $research_theme .Params.category }} 
+    				<a href="{{ .URL | relURL }}/"><strong>{{ $research_theme }}</strong></a>
+	    		{{ end }}	
+    		{{ end }}
+    	{{ end }}	
+	</div>
+	<div class="media">
     	<h4 class="widget-title">Project Details</h4>
         <ul>
             {{ range $i,$element:=.Params.details }}

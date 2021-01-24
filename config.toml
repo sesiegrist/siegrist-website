@@ -51,7 +51,7 @@ link = "plugins/google-map/gmap.js"
 ############################### widgets #################################
 
 [params.widgets]
-sidebar = ["recent_posts", "taxonomy_category", "taxonomy_tags"]
+sidebar = ["taxonomy_tags", "recent_posts", "twitter"]
 teamsidebar = ["team_members"]
 membersidebar = ["member_projects"]
 projectsidebar = ["project_info", "current_projects"]
@@ -90,7 +90,7 @@ link = "contact"
 
 # google map
 [params.gmap]
-enable = true
+enable = false
 gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
 # https://www.google.com/maps/place/Physical+Life+Sciences+Building,+University+of+Virginia/@38.0329832,-78.5146156,17z/data=!4m13!1m7!3m6!1s0x89b3865ba6b0f6ab:0xe93e095946c885d6!2s90+Geldard+Dr,+Charlottesville,+VA+22903!3b1!8m2!3d38.032979!4d-78.5124269!3m4!1s0x89b3865ba6a606e1:0x3cea570629ea49b1!8m2!3d38.032979!4d-78.5124269
 map_latitude = "38.0329832"

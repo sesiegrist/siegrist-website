@@ -5,7 +5,7 @@
   .widget-title {
     margin-bottom: 15px;
     padding-bottom: 10px;
-    font-size: 20px;
+    font-size: 24px;
     color: #333;
     font-weight: 500;
     border-bottom: 1px solid $border-color;
@@ -14,6 +14,8 @@
   // latest Posts
   &.widget-latest-post {
     .media {
+      font-size: 18px;
+    
       .media-object {
         width: 100px;
         height: auto;

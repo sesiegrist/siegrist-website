@@ -7,7 +7,7 @@ description: ""
 draft: false
 image : "images/projects/Nahid.png"
 bg_image: "images/projects/NB-in-niche.png"
-research_categories: ["quiescence vs proliferation"]
+research_categories: ["Quiescence vs Proliferation"]
 details:
   - label : "Members"
     info : ["Nahid Md Ausrafuggaman", "Katie Woods"]

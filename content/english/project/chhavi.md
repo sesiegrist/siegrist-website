@@ -7,7 +7,7 @@ description: "this is meta description"
 draft: false
 image : "images/projects/Sood.png"
 bg_image: "images/projects/NB-in-niche.png"
-research_categories: ["quiescence vs proliferation"]
+research_categories: ["Quiescence vs Proliferation"]
 tag: ["nutrient,temporal"]
 details:
   - label : "Members"
