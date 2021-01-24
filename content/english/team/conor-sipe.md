@@ -9,7 +9,7 @@ photo: "/images/team/sipe.png"
 lab_position: "Postdoc"
 lab_group: "Alumni"
 status: "alumni"
-current_position: "Shepherd University"
+current_position: "Assistant Professor, Shepherd University"
 draft: false
 ---
 

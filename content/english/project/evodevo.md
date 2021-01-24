@@ -3,10 +3,10 @@ layout: "project"
 type: "project"
 current: true
 title: "Evolution of neurodevelopmental programs"
-description: "this is meta description"
+description: ""
 draft: false
 image : "images/projects/Maine.png"
-bg_image: ""
+bg_image: "images/projects/fly-grass.png"
 research_categories: ["EvoDevo"]
 tag: ["evolution"]
 details:

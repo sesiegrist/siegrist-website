@@ -3,7 +3,7 @@ layout: "project"
 type: "project"
 current: true
 title: "Ey and lineage-specific programs"
-description: "Eyeless uncouples mushroom body neuroblast proliferation from dietary amino acids in Drosophila"
+description: ""
 draft: false
 image : "images/projects/Sipe-cartoon.png"
 bg_image: "images/projects/NB-in-niche.png"

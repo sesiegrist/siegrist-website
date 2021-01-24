@@ -3,7 +3,7 @@ layout: "project"
 type: "project"
 current: false
 title: "Termination of Neurogenesis"
-description: "Inactivation of both Foxo and reaper promotes long-term adult neurogenesis in Drosophila"
+description: ""
 draft: false
 image : "images/projects/termination-model.png"
 bg_image: "images/projects/E93-larval-brain-5.png"

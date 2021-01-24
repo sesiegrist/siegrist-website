@@ -5,16 +5,11 @@
 <div class="page-wrapper">
   <div class="container">
     <div class="row">
-      <div class="col-md-8">
+      <div class="col-md-8" style="padding-right:40px">
         {{ $paginator := .Paginate .Data.Pages }}
         {{ range $paginator.Pages }}
         <div class="post">
-          <div class="post-media post-thumb">
-            <a href="{{ .Permalink }}">
-              <img src="{{ .Params.Image | relURL }}" alt="{{ .Title }}" style="width:10;height:auto">
-            </a>
-          </div>
-          <h3 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+          <h3 class="post-title"><a><strong>{{ .Title }}</strong></a></h3>
           <div class="post-meta">
             <ul>
               <li><i class="ion-calendar"></i> {{ .PublishDate.Format "January 2, 2006" }}</li>
@@ -28,15 +23,21 @@
               </li>
               <li><i class="ion-pricetags"></i> 
                 {{ range $index, $elements:= .Params.Tags }}
-                {{ if ne $index 0 }}, {{ end }}<a href="{{ `tags/` | relLangURL }}{{ . | lower }}">HA {{ . | humanize }}</a>
+                {{ if ne $index 0 }}, {{ end }}<a href="{{ `tags/` | relLangURL }}{{ . | lower }}">{{ . | humanize }}</a>
 								{{ end }}
               </li>
             </ul>
           </div>
-          <div class="post-content">
-            <p>{{ .Summary }}</p>
-            <a href="{{ .Permalink }}" class="btn btn-main">{{ i18n "read_more" }}</a>
+          <div class="post-media post-thumb">
+            <a>
+              <img src="{{ .Params.Image | relURL }}" alt="{{ .Title }}" style="width:10;height:auto">
+            </a>
           </div>
+          <div class="post-content">
+            <p>{{ .Content }}</p>
+            <!--<a href="{{ .Permalink }}" class="btn btn-main">{{ i18n "read_more" }}</a>-->
+          </div>
+          <hr style="border-width: 2px">
         </div>
         {{ end }}
         

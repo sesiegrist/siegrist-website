@@ -6,8 +6,7 @@ authors: [
    "Susan E. Doyle",
    "Matthew C. Pahl",
    "Karsten H. Siller",
-   "Lindsay Ardiff",
-   "Sarah E. Siegrist"]
+   "Lindsay Ardiff"]
 date: "2017-01-26"
 links:
   - label : "Development 144, 820-929"

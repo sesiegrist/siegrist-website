@@ -9,14 +9,14 @@
 <section class="page-wrapper">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-9">
+			<div class="col-md-9" style="padding-right:40px">
 				<div>
 				    <h2>About {{ $firstname }}</h2>
 				</div>
 				<div class="post post-single">
 					<div class="post-thumb">
 						<img style="width:200px;height:auto;padding:15px" align="left" src="{{ .Params.Photo | relURL }}" alt="{{ .Title }}">
-						<a style="padding:15px">{{ .Content }}</a>
+						<a style="padding:15px; text-align: justify;">{{ .Content }}</a>
 					</div>
 				</div>
  				<br style="clear:left;"/>

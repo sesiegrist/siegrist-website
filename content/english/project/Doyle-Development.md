@@ -3,7 +3,7 @@ layout: "project"
 type: "project"
 current: true
 title: "Neuroblast niche positioning"
-description: "this is meta description"
+description: ""
 draft: false
 image : "images/projects/doyle-development.png"
 bg_image: "images/projects/NB-in-niche.png"
