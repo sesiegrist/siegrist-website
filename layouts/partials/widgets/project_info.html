@@ -11,7 +11,7 @@
     		{{ $research_theme:= . }}
     		{{ range where $.Site.Pages "Type" "research" }}
     			{{ if eq $research_theme .Params.category }} 
-    				<a href="{{ .URL | relURL }}/"><strong>{{ $research_theme }}</strong></a>
+    				<a href="{{ .URL | relURL }}"><strong>{{ $research_theme }}</strong></a>
 	    		{{ end }}	
     		{{ end }}
     	{{ end }}	
