@@ -6,7 +6,7 @@ title: "Nutrient-regulated neuronal circuits and insulin signaling"
 description: ""
 draft: false
 image : "images/projects/PI-region.png"
-bg_image: "images/research/neuron.png"
+bg_image: "images/research/neuron.jpg"
 research_categories: ["Neuronal Circuits"] # Quiescence vs Proliferation
 details:
   - label : "Members"
