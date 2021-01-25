@@ -1,5 +1,5 @@
 ################################# Default configuration ###################
-baseURL = "http://examplesite.org"
+baseURL = "https://siegristlab.org"
 title = "Siegrist Lab | Stem Cell Research"
 theme = "airspace-hugo"
 # post pagination
