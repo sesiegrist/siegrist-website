@@ -1,6 +1,6 @@
 ---
 type: "member"
-layout: "team"
+type: "team"
 title: "Siddharth Patel"
 publish_name: "Siddharth Patel"
 bg_image: ""

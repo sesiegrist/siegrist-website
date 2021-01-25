@@ -1,6 +1,6 @@
 ---
 type: "member"
-layout: "team"
+type: "team"
 title: "Melvin Mora Rangel"
 publish_name: "Melvin Mora Rangel"
 bg_image: ""

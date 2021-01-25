@@ -3,27 +3,87 @@
 {{ partial "page-title.html" . }}
 
 {{ $member:=.Params.Title }}
+{{ $author:=.Params.publish_name }}
 {{ $firstname:= index (split $member " ") 0 }}
+
 <section class="page-wrapper">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8">
+			<div class="col-md-9" style="padding-right:40px">
+				<div>
+				    <h2>About {{ $firstname }}</h2>
+				</div>
 				<div class="post post-single">
 					<div class="post-thumb">
-						<img class="img-responsive" src="{{ .Params.Photo | relURL }}" alt="{{ .Title }}">
-					</div>
-					<div class="section-title">
-					    <h2>{{ $firstname }}'s Interests</h2>
-					</div>
-					<div class="post-content post-excerpt">
-						{{ .Content }}
-					</div>
-					<div class="post-comments">
-						{{ template "_internal/disqus.html" . }}
+						<img style="width:200px;height:auto;padding-right:15px;padding-left:15px" align="left" src="{{ .Params.Photo | relURL }}" alt="{{ .Title }}">
+						<a style="padding-right:15px; text-align: justify;">{{ .Content }}</a>
 					</div>
 				</div>
+ 				<br style="clear:left;"/>
+				<hr>	
+				<div>
+					<h2>{{ $firstname }}'s Projects</h2>
+				</div>
+			{{ range where .Site.Pages "Type" "project" }}
+				{{ $project_page:= . }}
+			    {{ range .Params.details  }}
+                	{{ if in .info $member }}
+						<hr>
+						<div class="row">
+							<div class="post">
+								<div class="col-md-3">
+								<div class="post-media">
+									<div class="post-thumb" >
+										<a href="{{ $project_page.Permalink }}">
+											<img  class="hover-shadow" style="width:200px;height:auto;padding:5px;"  src="{{ $project_page.Params.Image | relURL }}" alt="{{ $project_page.Title }}">
+										</a>
+									</div>
+								</div>
+								</div>
+								<div class="col-md-9">	
+					    			<div>
+					        			<h3 class="post-title" style="margin-top:0px;margin:0px"><a href="{{ $project_page.Permalink }}">{{ $project_page.Title }}</a></h3>
+					        			<div class="post-content">
+						        			<p>{{ $project_page.Summary }}</p>
+						        			<a href="{{ $project_page.Permalink }}" class="btn btn-main">{{ i18n "read_more" }}</a>
+					        			</div>
+					    			</div>
+					 			</div>   
+							</div>
+			    		</div>
+					{{ end }}
+			    {{ end }}
+			{{ end }}
+
+			{{ $pub_pages:=(where (where .Site.Pages "Type" "publication") ".Params.authors" "intersect" (slice $author))  }}
+			{{ if gt (len $pub_pages) 0 }}
+		        <hr>
+				<div>
+					<h2>{{ $firstname }}'s Publications</h2>
+				</div>
+				<hr>
+			{{ end }}
+			{{ range $i,$page:=$pub_pages }}
+				<p>
+                {{ $authors:=delimit $page.Params.authors ", " }}
+            	{{ $otherauthors:=split $authors $author }}
+            	{{ index $otherauthors 0 }}
+            	<a><b>{{ $author }}</b></a>
+            	{{ index $otherauthors 1 }}
+            	({{ $page.Params.Date.Format "2006" }})
+                {{ $page.Params.title }}
+                {{ range $index,$citation:=$page.Params.links }}
+                	{{ if ne $index 0 }}
+                		<a> | </a>
+                	{{ end }}    
+                		<a href={{ $citation.url }}><b>{{ $citation.label }}</b></a>
+                	{{ end }}
+                	</p>
+				{{ end }}
+			    <hr>
+
 			</div>
-            <div class="col-md-4">
+            <div class="col-md-3">
             	{{ .Scratch.Set "exclude" .Title }}
                 {{ partial "team-sidebar.html" . }}
             </div>
@@ -31,72 +91,15 @@
 	</div>
 </section>
 
-<section>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="section-title">
-					<h2>{{ $firstname }}'s Projects</h2>
-				</div>
-			</div>
-			{{ range where .Site.Pages "Type" "project" }}
-                {{ if in .Params.members $member }}
-			<!-- <div class="col-md-6"> -->
-				<div class="post">
-				<div class="post-media">
-					<div class="post-thumb">
-						<a href="{{ .Permalink }}">
-							<img class="demo" src="{{ .Params.Image | relURL }}" alt="{{ .Title }}">
-						</a>
-					</div>
-					<div>
-					<h3 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-					<div class="post-content">
-						<p>{{ .Summary }}</p>
-						<a href="{{ .Permalink }}" class="btn btn-main">{{ i18n "read_more" }}</a>
-					</div>
-					</div>
-				</div>
-				</div>
-			<!-- </div> -->
-			    {{ end }}
-			{{ end }}
-		</div>
-	</div>
-</section>
+<style>
 
-<section>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="section-title">
-					<h2>{{ $firstname }}'s Publications mGS</h2>
-				</div>
-			</div>
-			{{ range where .Site.Pages "Type" "publications" }}
-                {{ if in .Params.members $member }}
-			<!-- <div class="col-md-6"> -->
-				<div class="post">
-				<div class="post-media">
-					<div class="post-thumb">
-						<a href="{{ .Permalink }}">
-							<img class="demo" src="{{ .Params.Image | relURL }}" alt="{{ .Title }}">
-						</a>
-					</div>
-					<div>
-					<h3 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-					<div class="post-content">
-						<p>{{ .Summary }}</p>
-						<a href="{{ .Permalink }}" class="btn btn-main">{{ i18n "read_more" }}</a>
-					</div>
-					</div>
-				</div>
-				</div>
-			<!-- </div> -->
-			{{ end }}
-			{{ end }}
-		</div>
-	</div>
-</section>
+img.hover-shadow {
+  transition: 0.2s;
+}
 
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>
 
+{{ end }}

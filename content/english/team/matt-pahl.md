@@ -1,6 +1,6 @@
 ---
 type: "member"
-layout: "team"
+type: "team"
 title: "Matt Pahl"
 publish_name: "Matthew C. Pahl"
 bg_image: ""

@@ -1,6 +1,6 @@
 ---
 type: "member"
-layout: "team"
+type: "team"
 title: "Logan Horng"
 publish_name: "Logan Horng"
 bg_image: ""

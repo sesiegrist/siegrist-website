@@ -1,6 +1,6 @@
 ---
 type: "member"
-layout: "team"
+type: "team"
 title: "Cami Naomi Keliinui"
 publish_name: "Cami N Keliinui"
 email: "?@?"

@@ -1,6 +1,6 @@
 ---
 type: "member"
-layout: "team"
+type: "team"
 title: "Katie Woods"
 publish_name: "Katie Woods"
 email: "?@?"

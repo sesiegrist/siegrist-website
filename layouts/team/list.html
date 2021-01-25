@@ -17,7 +17,7 @@
                 				<input type="radio" name="shuffle-filter" value="all" checked="checked">All
               				</label>
               				{{ $categories := slice }}
-              				{{ range where .Site.Pages ".Params.type" "member" }}
+              				{{ range where .Site.Pages ".Params.type" "team" }}
               					{{ $categories = $categories | append .Params.lab_group }}
               				{{ end }}
               				{{ $categories:=uniq $categories }}
@@ -36,7 +36,7 @@
               				{{ end }}
               				
               				<div class="list-alumni">
-            					{{ range sort (where (where .Site.Pages ".Params.type" "member") ".Params.status" "==" "alumni" ) ".Params.status" "desc" }}
+            					{{ range sort (where (where .Site.Pages ".Params.type" "team") ".Params.status" "==" "alumni" ) ".Params.status" "desc" }}
             						<div class="row" style="text-align:left;">
             							<div class="col-md-4">
             								<h3>{{ .Title }}</h3>
@@ -57,7 +57,7 @@
                     </div>
                         	
           			<div class="row shuffle-wrapper">
-            			{{ range sort (where .Site.Pages ".Params.type" "member") ".Params.status" "desc" }} 
+            			{{ range sort (where .Site.Pages ".Params.type" "team") ".Params.status" "desc" }} 
     						<div class="portfolio-item shuffle-item" style="padding:10px;" data-groups="[&quot;{{ .Params.lab_group | urlize }}&quot;]">
          						{{ if eq .Params.status "current" }}
               						<img class="hover-shadow responsive" style="width:240px;height:auto;border-radius:10px" src="{{ .Params.Photo | relURL }}" alt="{{ .Title }}"/>

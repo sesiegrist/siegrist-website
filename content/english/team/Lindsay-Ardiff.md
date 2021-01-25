@@ -1,6 +1,6 @@
 ---
 type: "member"
-layout: "team"
+type: "team"
 title: "Lindsay Ardiff"
 publish_name: "Lindsay Ardiff"
 bg_image: ""

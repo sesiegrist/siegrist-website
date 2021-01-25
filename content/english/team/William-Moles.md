@@ -1,6 +1,6 @@
 ---
 type: "member"
-layout: "team"
+type: "team"
 title: "William Moles"
 publish_name: "William Moles"
 bg_image: ""

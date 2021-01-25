@@ -1,6 +1,6 @@
 ---
 type: "member"
-layout: "team"
+type: "team"
 title: "Meng-jiuan Su"
 publish_name: "Meng-jiuan Su"
 bg_image: ""

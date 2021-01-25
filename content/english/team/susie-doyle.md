@@ -1,6 +1,6 @@
 ---
 type: "member"
-layout: "team"
+type: "team"
 Title: "Susie Doyle"
 publish_name: "Susan E. Doyle"
 email: "sed5c@virginia.edu"

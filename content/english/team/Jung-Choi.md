@@ -1,6 +1,6 @@
 ---
 type: "member"
-layout: "team"
+type: "team"
 title: "Jung Choi"
 publish_name: "Jung Choi"
 bg_image: ""

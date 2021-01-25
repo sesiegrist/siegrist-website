@@ -1,6 +1,6 @@
 ---
 type: "member"
-layout: "team"
+type: "team"
 title: "Emma Ehreth"
 publish_name: "Emma Ehreth"
 bg_image: ""

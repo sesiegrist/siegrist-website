@@ -1,6 +1,6 @@
 ---
 type: "member"
-layout: "team"
+type: "team"
 title: "Courtney Doran"
 publish_name: "Courtney Doran"
 bg_image: ""

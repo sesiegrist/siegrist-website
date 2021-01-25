@@ -1,6 +1,6 @@
 ---
 type: "member"
-layout: "team"
+type: "team"
 title: "Catherine Shen"
 publish_name: "Catherine Shen"
 bg_image: ""

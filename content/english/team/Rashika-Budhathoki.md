@@ -1,6 +1,6 @@
 ---
 type: "member"
-layout: "team"
+type: "team"
 title: "Rashika Budhathoki"
 publish_name: "Rashika Budhathoki"
 bg_image: ""

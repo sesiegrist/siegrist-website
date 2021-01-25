@@ -1,6 +1,6 @@
 ---
 type: "member"
-layout: "team"
+type: "team"
 title: "Morgan Brazel"
 publish_name: "Morgan Brazel"
 bg_image: ""

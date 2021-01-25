@@ -1,6 +1,5 @@
 ---
-type: "member"
-layout: "team"
+type: "team"
 title: "Taylor Nystrom"
 publish_name: "Taylor Nystrom"
 email: "?@?"

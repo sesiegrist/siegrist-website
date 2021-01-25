@@ -1,6 +1,6 @@
 ---
 type: "member"
-layout: "team"
+type: "team"
 title: "Xin Yuan"
 publish_name: "Xin Yuan"
 email: "?@?"

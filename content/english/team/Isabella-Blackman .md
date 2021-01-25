@@ -1,6 +1,6 @@
 ---
 type: "member"
-layout: "team"
+type: "team"
 title: "Isabella Blackman"
 publish_name: "Isabella Blackman"
 bg_image: ""

@@ -1,6 +1,6 @@
 ---
 type: "member"
-layout: "team"
+type: "team"
 title: "Sarah Siegrist"
 publish_name: "Sarah E. Siegrist"
 email: "ses4gr@virginia.edu"

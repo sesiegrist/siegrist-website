@@ -1,7 +1,7 @@
 <div class="widget widget-latest-post">
 	{{ $exclude:=.Scratch.Get "exclude" }}
     {{ $current_members:=slice }}
-    {{ range where (where .Site.Pages "Type" "member") ".Params.status" "==" "current" }}
+    {{ range where (where .Site.Pages "Type" "team") ".Params.status" "==" "current" }}
 		{{ $current_members = $current_members | append .Title }}
     {{ end }}
 
@@ -16,27 +16,27 @@
     		{{ end }}
     	{{ end }}	
 	</div>
-	<div class="media">
-    	<h4 class="widget-title">Project Details</h4>
-        <ul>
             {{ range $i,$element:=.Params.details }}
+	<div class="media">
+        <ul>
+	    	<h4 class="widget-title">Project {{ $element.label }}</h4>
             {{ if eq $element.label "Members" }}
-            <li><span>{{ $element.label }} :</span>                	
             	{{ range $index,$member:=$element.info }}
+            		<li><span>                	
             		{{ $authorlink:=path.Join "team/" ( $member | urlize) }}
             		{{ if and ($.Site.GetPage $authorlink) ( in $current_members $member ) }}
-                	    <a href="{{ $authorlink | relURL }}"><strong>{{ if (ne $index 0) }}{{ ", " }}{{end}}{{ $member }}</strong></a>
+                	    <a href="{{ $authorlink | relURL }}"><strong>{{ $member }}</strong></a>
                 	{{ else }}    
-                	    <a>{{ if (ne $index 0) }}{{ ", " }}{{end}}{{ $member }}</a>
+                	    <a>{{ $member }}</a>
                 	{{ end }}
-                {{ end }}
-            </li>
+	            	</span></li>
+			{{ end }}
             {{ else }}
             	{{ if .info }} 
-               		<li><span>{{ .label }} :</span> <strong>{{ .info | markdownify }}</strong></li>
+               		<li><strong>{{ .info | markdownify }}</strong></li>
             	{{ end }}
-            {{ end }}
             {{ end }}
         </ul>
 	</div>
+            {{ end }}
 </div>

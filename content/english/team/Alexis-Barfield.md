@@ -1,6 +1,6 @@
 ---
 type: "member"
-layout: "team"
+type: "team"
 title: "Alexis Barfield"
 publish_name: "Alexis Barfield"
 bg_image: ""

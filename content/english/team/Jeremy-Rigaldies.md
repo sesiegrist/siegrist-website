@@ -1,6 +1,6 @@
 ---
 type: "member"
-layout: "team"
+type: "team"
 title: "Jeremy Rigaldies"
 publish_name: "Jeremy Rigaldies"
 bg_image: ""

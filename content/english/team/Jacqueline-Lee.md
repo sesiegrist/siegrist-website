@@ -1,6 +1,6 @@
 ---
 type: "member"
-layout: "team"
+type: "team"
 title: "Jacqueline Lee"
 publish_name: "Jacqueline Lee"
 bg_image: ""

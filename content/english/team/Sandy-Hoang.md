@@ -1,6 +1,6 @@
 ---
 type: "member"
-layout: "team"
+type: "team"
 title: "Sandy Hoang"
 publish_name: "Sandy Hoang"
 bg_image: ""

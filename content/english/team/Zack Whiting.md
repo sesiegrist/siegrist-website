@@ -1,6 +1,6 @@
 ---
 type: "member"
-layout: "team"
+type: "team"
 title: "Zack Whiting"
 publish_name: "Zack Whiting"
 bg_image: ""

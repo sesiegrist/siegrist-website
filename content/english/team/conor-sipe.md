@@ -1,6 +1,6 @@
 ---
 type: "member"
-layout: "team"
+type: "team"
 title: "Conor Sipe"
 publish_name: "Conor W. Sipe"
 email: "?@?"

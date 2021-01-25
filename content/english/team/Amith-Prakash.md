@@ -1,6 +1,6 @@
 ---
 type: "member"
-layout: "team"
+type: "team"
 title: "Amith Prakash"
 publish_name: "Amith Prakash"
 bg_image: ""

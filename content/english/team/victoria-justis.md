@@ -1,6 +1,6 @@
 ---
 type: "member"
-layout: "team"
+type: "team"
 title: "Virginia Justis"
 publish_name: "Virginia Justis"
 bg_image: ""

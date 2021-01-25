@@ -1,6 +1,6 @@
 ---
 type: "member"
-layout: "team"
+type: "team"
 title: "Samantha Richardson"
 publish_name: "Samantha Richardson"
 bg_image: ""

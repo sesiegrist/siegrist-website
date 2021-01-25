@@ -1,6 +1,6 @@
 ---
 type: "member"
-layout: "team"
+type: "team"
 title: "Jami Null"
 publish_name: "Jami Null"
 bg_image: ""

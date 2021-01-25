@@ -2,5 +2,5 @@
 title: "Projects"
 description: "We're studying neural stem cells"
 draft: false
-bg_image: "images/main-bg.png"
+bg_image: "images/projects/project-bg.jpg"
 ---

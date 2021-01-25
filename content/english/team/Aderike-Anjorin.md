@@ -1,6 +1,6 @@
 ---
 type: "member"
-layout: "team"
+type: "team"
 title: "Aderike Anjorin"
 publish_name: "Aderike Anjorin"
 bg_image: ""

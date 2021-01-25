@@ -1,6 +1,6 @@
 ---
 type: "member"
-layout: "team"
+type: "team"
 title: "Tejpal Randhawa"
 publish_name: "Tejpal Randhawa"
 bg_image: ""
