@@ -23,7 +23,7 @@
             {{ if eq $element.label "Members" }}
             	{{ range $index,$member:=$element.info }}
             		<li><span>                	
-            		{{ $authorlink:=path.Join "team/" ( $member | urlize) }}
+            		{{ $authorlink:=path.Join "/team/" ( $member | urlize) "/"}}
             		{{ if and ($.Site.GetPage $authorlink) ( in $current_members $member ) }}
                 	    <a href="{{ $authorlink | relURL }}"><strong>{{ $member }}</strong></a>
                 	{{ else }}    

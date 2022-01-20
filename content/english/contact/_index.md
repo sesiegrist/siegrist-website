@@ -1,6 +1,6 @@
 ---
-title: "Drop Us A Note"
-description: "We're hiring!"
+title: "Get in touch"
+description: # "We're hiring!"
 links_title: "Links"
 links:
   - label: "Department of Biology at UVA"
@@ -15,7 +15,4 @@ image: "images/contact/lab.jpg"
 bg_image: "images/contact/oak-tree.jpg"
 
 ---
-We have open <a href="https://uva.wd1.myworkdayjobs.com/en-US/UVAJobs/job/Charlottesville-VA/Research-Associate-in-Biology_R0019751"><strong>post-doc</strong></a> and  <a href="https://uva.wd1.myworkdayjobs.com/en-US/UVAJobs/job/Charlottesville-VA/BIOL---Siegrist-Lab-Tech-1_R0019749"><strong>lab tech</strong></a> positions available.
-
-Send us an email.
 

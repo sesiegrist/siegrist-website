@@ -68,7 +68,7 @@ description = "This is meta description"
 author = "Siegrist Lab"
 # Contact Information
 mobile = ""
-email = "ses4gr@virginia.com"
+email = "ses4gr@virginia.edu"
 location = "Physical Life Sciences Building, 90 Geldard Dr, University of Virginia"
 # contact form action
 contact_form_action = "#" # contact form works with : https://formspree.io

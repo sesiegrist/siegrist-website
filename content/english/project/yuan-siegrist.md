@@ -10,7 +10,7 @@ bg_image: "images/projects/NB-in-niche.png"
 research_categories: ["Quiescence vs Proliferation"] # Neuronal Circuits
 details:
   - label : "Members"
-    info : ["Xin Yuan", "Conor Sipe"]
+    info : ["Xin Yuan", "Conor Sipe", "Bharath Sunchu"]
   - label : "Paper"
     info : "<a href='https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000721'>PLoS Biology, May 28 2020</a>"
 ---

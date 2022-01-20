@@ -7,8 +7,8 @@ email: "?@?"
 bg_image: "images/team/Maine-lake.jpg"
 photo: "/images/team/woods.png"
 lab_position: "Undergrad Student"
-lab_group: "Undergraduate Students"
-status: "current"
+lab_group: "Alumni"
+status: "alumni"
 draft: false
 
 ---

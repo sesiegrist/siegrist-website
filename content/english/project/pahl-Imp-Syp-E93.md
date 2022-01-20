@@ -10,7 +10,7 @@ bg_image: "images/projects/E93-larval-brain-5.png"
 research_categories: ["Temporal Identity"]
 details:
   - label : "Members"
-    info : ["Matt Pahl", "Susie Doyle"]
+    info : ["Matt Pahl", "Susie Doyle", "Chhavi Sood"]
   - label : "Paper"
     info : "<a href=https://www.sciencedirect.com/science/article/pii/S0960982219300685?via%3Dihub>Current Biology, Volume 29, Issue 5, 4 March 2019, Pages 750-762.e3</a>"
 ---
