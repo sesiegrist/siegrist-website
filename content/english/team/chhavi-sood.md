@@ -7,8 +7,9 @@ email: "?@?"
 bg_image: "images/team/Maine-lake.jpg"
 photo: "/images/team/sood.png"
 lab_position: "Grad Student"
-lab_group: "Graduate Students"
-status: "current"
+lab_group: "Alumni"
+status: "alumni"
+current_position: "Post-doc, Littleton lab, MIT"
 draft: false
 
 ---

@@ -2,7 +2,7 @@
 type: "member"
 type: "team"
 title: "Nahid Md Ausrafuggaman"
-publish_name: "Nahid M. Ausrafuggaman"
+publish_name: "Md Ausrafuggaman Nahid"
 email: "?@?"
 bg_image: "images/team/Maine-lake.jpg"
 photo: "/images/team/ausrafuggaman.png"
