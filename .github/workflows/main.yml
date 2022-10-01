@@ -3,7 +3,7 @@ name: Website Build CI
 # Controls when the workflow will run
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "staging" ]
   pull_request:
     branches: [ "main" ]
 
