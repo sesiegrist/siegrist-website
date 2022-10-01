@@ -3,7 +3,7 @@ name: Website Build CI
 # Controls when the workflow will run
 on:
   push:
-    branches: [ "main", "staging" ]
+    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
@@ -42,7 +42,7 @@ jobs:
       
       - name: Build webpages
         run: |
-          docker run -v $(pwd)/website:/website -w /website khsiller/hugo-builder:0.79.0 hugo --minify -v --ignoreCache
+          docker run -v $(pwd)/website:/website -w /website khsiller/hugo-builder:0.79.0 hugo -v --ignoreCache
           ls website/public
         
       - name: Upload to S3 and invalidate cache
