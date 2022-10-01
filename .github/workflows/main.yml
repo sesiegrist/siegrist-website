@@ -22,11 +22,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
         with:
-          ref: staging
+          ref: ${{ github.ref_name }}
           path: website
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
+      - name: Top level folders in website repo
         run: ls website
       
       - name: Get HUGO container
@@ -34,7 +34,7 @@ jobs:
       
       - name: Build webpages
         run: |
-          docker run -v $(pwd):/website -w /website khsiller/hugo-builder:0.79.0 hugo
+          docker run -v $(pwd)/website:/website -w /website khsiller/hugo-builder:0.79.0 hugo
           ls website/public
         
       - name: Upload to S3 and invalidate cache
