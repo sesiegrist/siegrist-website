@@ -27,16 +27,17 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: ls
+        run: ls website
       
       - name: Get HUGO container
         run: docker pull khsiller/hugo-builder:0.79.0
       
-      - name: Run HUGO container
-        run: docker run -v $(pwd):/website -w /website khsiller/hugo-builder:0.79.0 hugo version
-      
-      # Runs a set of commands using the runners shell
-      - name: 
+      - name: Build webpages
+        run: |
+          docker run -v $(pwd):/website -w /website khsiller/hugo-builder:0.79.0 hugo
+          ls website/public
+        
+      - name: Upload to S3 and invalidate cache
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
