@@ -4,6 +4,7 @@ on:
   push:
     branches:
     - 'main'
+    - 'staging'
   schedule:
     - cron: '0 8 * * *'
 
