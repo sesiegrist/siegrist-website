@@ -39,7 +39,7 @@ jobs:
         run: ls website
       
       - name: Get HUGO container
-        run: docker pull khsiller/hugo-builder:0.79.0
+        run: docker pull khsiller/hugo-builder:$HUGO_VERSION
       
       - name: Build webpages
         run: |
