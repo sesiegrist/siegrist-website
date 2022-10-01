@@ -36,7 +36,9 @@ jobs:
         run: echo $BUCKET_NAME      
 
       - name: Top level folders in website repo
-        run: ls website
+        run: |
+          echo $HUGO_VERSION
+          ls website
       
       - name: Get HUGO container
         run: docker pull khsiller/hugo-builder:$HUGO_VERSION
