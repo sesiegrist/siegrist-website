@@ -1,0 +1,49 @@
+name: Hugo Build CI
+
+on:
+  push:
+    branches:
+    - 'main'
+  schedule:
+    - cron: '0 8 * * *'
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: nelonoel/branch-name@v1
+      env:
+        ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+    - run: echo ${BRANCH_NAME}
+    - name: Set ENV vars
+      #env:
+      #  BUCKET_NAME: ${{ secrets.BUCKET_NAME }}
+      #  DISTRIBUTION_ID: ${{ secrets.DISTRIBUTION_ID }}
+      #  MAX_AGE: ${{ secrets.MAX_AGE }}
+      #  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      #  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      run: echo $BUCKET_NAME
+    - name: Clone website repo
+      run: git clone --single-branch -b ${BRANCH_NAME} ${{ github.repository }} 
+    - name: Get HUGO container
+      run: docker pull khsiller/hugo-builder:0.79.0
+    - name: Run HUGO container
+      run: docker run -v $(pwd):/website -w /website khsiller/hugo-builder:0.79.0 hugo version
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
