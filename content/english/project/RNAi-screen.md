@@ -7,7 +7,7 @@ description: ""
 draft: false
 image : "images/projects/screen-website.png"
 bg_image: "images/projects/termination-1.png"
-research_categories: ["Repair & Regeneration"] # Temporal Identity
+research_categories: ["Repair & Regeneration"]
 details:
   - label : "Members"
     info : ["Matt Pahl", "Susie Doyle", "Tess Gibson", "Gary Teeters"]

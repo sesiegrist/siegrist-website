@@ -7,7 +7,7 @@ description: ""
 draft: false
 image : "images/projects/Sipe-cartoon.png"
 bg_image: "images/projects/NB-in-niche.png"
-research_categories: ["Quiescence vs Proliferation"]
+research_categories: ["Quiescence"]
 details:
   - label : "Members"
     info : ["Conor Sipe"]

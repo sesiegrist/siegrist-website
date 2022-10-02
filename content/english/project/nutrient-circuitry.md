@@ -7,7 +7,7 @@ description: ""
 draft: false
 image : "images/projects/PI-region.png"
 bg_image: "images/research/neuron.jpg"
-research_categories: ["Neuronal Circuits"] # Quiescence vs Proliferation
+research_categories: ["Neural Circuits"]
 details:
   - label : "Members"
     info : ["Susie Doyle", "Cami Naomi Keliinui", "Xin Yuan", "Bharath Sunchu"]

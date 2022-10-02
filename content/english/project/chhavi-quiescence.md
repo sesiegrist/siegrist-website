@@ -7,7 +7,7 @@ description: ""
 draft: false
 image : "images/projects/Sood.png"
 bg_image: "images/projects/NB-in-niche.png"
-research_categories: ["Quiescence vs Proliferation"]
+research_categories: ["Quiescence"]
 tag: ["nutrient,temporal"]
 details:
   - label : "Members"

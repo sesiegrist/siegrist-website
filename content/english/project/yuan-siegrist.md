@@ -7,7 +7,7 @@ description: ""
 draft: false
 image : "images/projects/Yuan-cartoon.png"
 bg_image: "images/projects/NB-in-niche.png"
-research_categories: ["Quiescence vs Proliferation"] # Neuronal Circuits
+research_categories: ["Quiescence"]
 details:
   - label : "Members"
     info : ["Xin Yuan", "Conor Sipe", "Bharath Sunchu"]

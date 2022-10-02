@@ -11,7 +11,7 @@ research_categories: ["EvoDevo"]
 tag: ["evolution"]
 details:
   - label : "Members"
-    info : ["Taylor Nystrom"]
+    info : ["Taylor Nystrom", "Tai Ferree", "Crystal Guerrero"]
   - label : "Paper"
     info : ""
 ---

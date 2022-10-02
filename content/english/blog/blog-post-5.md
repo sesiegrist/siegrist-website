@@ -3,7 +3,7 @@ title: "Welcome Abril Gaona Gamboa"
 date: 2021-02-01T11:07:10+06:00
 author: "Sarah Siegrist"
 image : "images/blog/AbrilGaona.jpg"
-bg_image: "images/blog/news.png"
+bg_image: "images/blog/news.jpg"
 categories: ["Team News"]
 tags: ["Lab Life"]
 description: "this is meta description"

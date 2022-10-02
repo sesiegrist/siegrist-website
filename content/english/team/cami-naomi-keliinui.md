@@ -2,7 +2,7 @@
 type: "member"
 type: "team"
 title: "Cami Naomi Keliinui"
-publish_name: "Cami N Keliinui"
+publish_name: "Cami N. Keliinui"
 email: "?@?"
 bg_image: "images/team/Maine-lake.jpg"
 photo: "/images/team/keliinui.png"

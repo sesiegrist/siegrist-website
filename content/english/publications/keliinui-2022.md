@@ -3,7 +3,7 @@ type: "publication"
 subtype: "paper"
 title: "Neural Stem Cell Reactivation in Cultured Drosophila Brain Explants."
 authors: [
-   "Cami Naomi Keliinui",
+   "Cami N. Keliinui",
    "Susan E. Doyle",
    "Sarah E. Siegrist"]
 date: "2022-05-18"
