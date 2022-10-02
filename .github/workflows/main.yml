@@ -1,0 +1,74 @@
+name: Website Build CI
+
+# Controls when the workflow will run
+on:
+  push:
+    branches: [ "main", "staging" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    env:
+      HUGO_VERSION: "0.81.0-extended"
+      BUCKET_NAME: ${{ secrets.BUCKET_NAME }}
+      DISTRIBUTION_ID: ${{ secrets.DISTRIBUTION_ID }}
+      MAX_AGE: ${{ secrets.MAX_AGE }}
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.ref_name }}
+          path: website
+
+      - name: Show ENV vars
+        run: |
+          echo $BUCKET_NAME
+          echo $HUGO_VERSION
+
+      - name: Top level folders in website repo
+        run: |
+          echo $HUGO_VERSION
+          ls website
+      
+      - name: Get HUGO container
+        run: docker pull khsiller/hugo-builder:$HUGO_VERSION
+      
+      - name: Build webpages
+        run: |
+          docker run -v $(pwd)/website:/website -w /website khsiller/hugo-builder:$HUGO_VERSION hugo -v --ignoreCache
+          ls website/public
+        
+      - name: Upload to S3 and invalidate cache
+        run: |
+          aws s3 sync website/public s3://$BUCKET_NAME --region=us-east-1 --cache-control public,max-age=$MAX_AGE,s-maxage=$MAX_AGE --expires="$EXPIRES" --metadata generator=hugo-$HUGO_VERSION --delete
+          aws s3 cp website/public s3://$BUCKET_NAME --metadata-directive REPLACE --exclude "*" --include "*.jpg" --include "*.gif" --include "*.png" --recursive --cache-control max-age=604800,s-maxage=604800
+          aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths "/*";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
