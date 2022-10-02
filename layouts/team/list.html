@@ -10,7 +10,7 @@
 		<div class="row">
 			<!-- <div class="col-md-12">-->
         		<div class="block">
-          			<div class="portfolio-menu">
+          			<div class="portfolio-menu justify-content-center">
 		    			<div class="btn-group btn-group-toggle justify-content-center" data-toggle="buttons">
               				
               				<label class="btn btn-sm btn-primary" active>
@@ -21,7 +21,7 @@
               					{{ $categories = $categories | append .Params.lab_group }}
               				{{ end }}
               				{{ $categories:=uniq $categories }}
-              				{{ $fixed_categories:= slice "PI" "Postdocs & Scientists" "Graduate Students" "Undergraduate Students" }}
+              				{{ $fixed_categories:= slice "PI" "Postdocs & Scientists" "Graduate Students" "Undergrads" "Alumni" }}
               				{{ $sorted_categories:=intersect $fixed_categories $categories }}
               				{{ $other:=$categories | complement $sorted_categories }}
               				{{ $sorted_categories:=append $other $sorted_categories }}
@@ -56,10 +56,10 @@
                         </div>
                     </div>
                         	
-          			<div class="row shuffle-wrapper">
-            			{{ range sort (where .Site.Pages ".Params.type" "team") ".Params.status" "desc" }} 
-    						<div class="portfolio-item shuffle-item" style="padding:10px;" data-groups="[&quot;{{ .Params.lab_group | urlize }}&quot;]">
-         						{{ if eq .Params.status "current" }}
+          			<div class="row shuffle-wrapper" style="margin-left:auto;margin-right:auto;">
+            			{{ range sort (where .Site.Pages ".Params.type" "team") ".Params.title" "asc" }} 
+         					{{ if eq .Params.status "current" }}
+    						    <div class="portfolio-item shuffle-item" style="padding:10px;" data-groups="[&quot;{{ .Params.lab_group | urlize }}&quot;]">
               						<img class="hover-shadow responsive" style="width:240px;height:auto;border-radius:10px" src="{{ .Params.Photo | relURL }}" alt="{{ .Title }}"/>
               						<div class="portfolio-hover" style="border-radius:10px">
         								<div class="portfolio-content">
@@ -67,9 +67,9 @@
                   							<a class="h3" href="{{ .Permalink }}">{{ .Title }}</a>
                   							<p>{{ .Params.Lab_position }}</p>
                 						</div>
-              						</div>
-              					{{ end }}
-    						</div>
+              					    </div>
+    						    </div>
+              				{{ end }}
             			{{ end }}
           			</div>
         
