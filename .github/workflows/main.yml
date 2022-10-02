@@ -3,7 +3,7 @@ name: Website Build CI
 # Controls when the workflow will run
 on:
   push:
-    branches: [ "main", "staging" ]
+    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
@@ -34,22 +34,15 @@ jobs:
           ref: ${{ github.ref_name }}
           path: website
 
-      - name: Show ENV vars
-        run: |
-          echo $BUCKET_NAME
-          echo $HUGO_VERSION
-
       - name: Top level folders in website repo
-        run: |
-          echo $HUGO_VERSION
-          ls website
+        run: ls website
       
       - name: Get HUGO container
         run: docker pull khsiller/hugo-builder:$HUGO_VERSION
       
       - name: Build webpages
         run: |
-          docker run -v $(pwd)/website:/website -w /website khsiller/hugo-builder:$HUGO_VERSION hugo -v
+          docker run -v $(pwd)/website:/website -w /website khsiller/hugo-builder:$HUGO_VERSION hugo -v --minify
           ls website/public
         
       - name: Upload to S3 and invalidate cache
