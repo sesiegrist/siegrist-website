@@ -1,0 +1,34 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ $data := index site.Data site.Language.Lang }}
+
+<section class="page-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                {{ range .Data.Pages }}
+                	<p>
+                	{{ delimit .Params.authors ", " }}
+                	({{ .Params.Date.Format "2006" }})
+                	{{ .Params.title }}
+                	{{ range $index,$citation:=.Params.links }}
+                		{{ if ne $index 0 }}
+                		    <a> | </a>
+                		{{ end }}    
+                		<a href={{ $citation.url }}><b>{{ $citation.label }}</b></a>
+                	{{ end }}
+                	</p>
+                {{ end }}
+            </div>
+            <div class="col-md-3">
+                <div>
+                   {{ .Scratch.Set "exclude" .Title }}
+                   {{ partial "publications-sidebar.html" . }}
+                </div>
+            </div>
+        </div>
+    </div>     
+</section>
+{{ end }}

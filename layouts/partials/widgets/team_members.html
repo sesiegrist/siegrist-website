@@ -1,0 +1,29 @@
+<div class="widget widget-latest-post">
+	{{ $exclude:=.Scratch.Get "exclude" }}
+    <h4 class="widget-title"><a href="/team">Lab Members</a></h4>
+    {{ range first 100 (where site.Pages "Type" "team") }}
+    {{ if and (eq .Params.Status "current") (ne $exclude .Title) }}
+    <div class="media">
+      <a class="pull-left" href="{{ .Permalink }}">
+        <img class="media-object hover-shadow" style="margin:5px;" src="{{ .Params.Photo | relURL }}" alt="{{ .Title }}">
+      </a>
+      <div class="media-body" style="padding-top:10px;">
+        <h4 class="media-heading"><a href="{{ .Permalink }}">{{ .Name }}</a></h4>
+        <p>{{ .Params.Lab_position }}</p>
+      </div>
+    </div>
+    {{ end }}
+    {{ end }}
+  </div>
+  
+<style>
+
+img.hover-shadow {
+  padding: 5px;
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>

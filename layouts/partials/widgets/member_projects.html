@@ -1,0 +1,27 @@
+<div class="widget widget-latest-post">
+	{{ $member:=.Scratch.Get "member" }}
+    <h4 class="widget-title"><a href="/project">{{ $member }}'s Projects</a></h4>
+    {{ range first 20 (where site.Pages "Type" "project") }}
+    {{ if (in .Params.Members $member ) }}
+    <div class="media">
+      <a class="pull-left" href="{{ .Permalink }}">
+        <img class="media-object hover-shadow" style="margin:5px;" src="{{ .Params.Image | relURL }}" alt="{{ .Title }}">
+      </a>
+      <div class="media-body" style="padding-top:10px;">
+        <h4 class="media-heading"><a href="{{ .Permalink }}">{{ .Name }}</a></h4>
+        <p>{{ .Params.Lab_position }}</p>
+      </div>
+    </div>
+    {{ end }}
+    {{ end }}
+  </div>
+  
+<style>  
+  img.hover-shadow {
+  transition: 0.2s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>

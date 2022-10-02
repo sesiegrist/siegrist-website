@@ -1,0 +1,233 @@
+################################# Default configuration ###################
+baseURL = "https://siegristlab.org"
+title = "Siegrist Lab | Stem Cell Research"
+theme = "airspace-hugo"
+# post pagination
+paginate = "4"
+# post excerpt
+summaryLength = "30"
+# disqus short name
+disqusShortname = "" # get your shortname form here : https://disqus.com
+# disable language
+disableLanguages = []
+
+################################# Outputs #################################
+# hugo outputs
+[outputs]
+home = ["HTML"]
+
+# render unsafe html
+[markup.goldmark.renderer]
+unsafe = true
+
+
+#################################### Plugins ##############################
+
+# CSS Plugins
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+link = "plugins/Ionicons/css/ionicons.min.css"
+[[params.plugins.css]]
+link = "plugins/magnific-popup/magnific-popup.css"
+[[params.plugins.css]]
+link = "plugins/slick/slick.css"
+
+# JS Plugins
+[[params.plugins.js]]
+link = "plugins/jQuery/jquery.min.js"
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+link = "plugins/slick/slick.min.js"
+[[params.plugins.js]]
+link = "plugins/magnific-popup/jquery.magnific-popup.min.js"
+[[params.plugins.js]]
+link = "plugins/shuffle/shuffle.min.js"
+[[params.plugins.js]]
+link = "plugins/google-map/gmap.js"
+
+
+############################### widgets #################################
+
+[params.widgets]
+sidebar = ["taxonomy_tags", "twitter"]
+teamsidebar = ["team_members"]
+membersidebar = ["member_projects"]
+projectsidebar = ["project_info", "current_projects"]
+publicationssidebar = ["publication_news"]
+researchsidebar = ["research_themes"]
+contactsidebar = ["links"]
+
+#################### default parameters ################################
+[params]
+logo = "images/siegristlab-logo.png"
+logo_width = "150px"
+# Meta data
+description = "This is meta description"
+author = "Siegrist Lab"
+# Contact Information
+mobile = ""
+email = "ses4gr@virginia.edu"
+location = "Gilmer, 485 McCormick Rd, University of Virginia"
+# contact form action
+contact_form_action = "#" # contact form works with : https://formspree.io
+# Google Analitycs
+google_analitycs_id = "" # Your ID# search
+# multi-author support (if set to true, you must use an Array in the author field)
+multi_author = false
+
+# Preloader
+[params.preloader]
+enable = true
+preloader = "" # use .png , .svg or .gif format
+
+# Navigation get start button
+[params.nav_button]
+enable = true
+label = "Get A Quote"
+link = "contact"
+
+# google map
+[params.gmap]
+enable = false
+gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
+# https://www.google.com/maps/place/Physical+Life+Sciences+Building,+University+of+Virginia/@38.0329832,-78.5146156,17z/data=!4m13!1m7!3m6!1s0x89b3865ba6b0f6ab:0xe93e095946c885d6!2s90+Geldard+Dr,+Charlottesville,+VA+22903!3b1!8m2!3d38.032979!4d-78.5124269!3m4!1s0x89b3865ba6a606e1:0x3cea570629ea49b1!8m2!3d38.032979!4d-78.5124269
+map_latitude = "38.0329832"
+map_longitude = "-78.5146156"
+map_marker = "images/marker.png"
+
+# cookies
+[params.cookies]
+enable = false
+expire_days = 2
+  
+############################# social site ########################
+[[params.social]]
+icon = "ion-social-googleplus-outline" #ionicon pack v2 : https://ionicons.com/v2/
+link = "#"
+
+[[params.social]]
+icon = "ion-social-linkedin-outline" #ionicon pack v2 : https://ionicons.com/v2/
+link = "#"
+
+[[params.social]]
+icon = "ion-social-pinterest-outline" #ionicon pack v2 : https://ionicons.com/v2/
+link = "#"
+
+[[params.social]]
+icon = "ion-social-dribbble-outline" #ionicon pack v2 : https://ionicons.com/v2/
+link = "#"
+
+[[params.social]]
+icon = "ion-social-twitter-outline" #ionicon pack v2 : https://ionicons.com/v2/
+link = "#"
+
+[[params.social]]
+icon = "ion-social-facebook-outline" #ionicon pack v2 : https://ionicons.com/v2/
+link = "#"
+
+
+languageName = "En"
+languageCode = "en-us"
+contentDir = "content/english"
+
+################################ English Language ########################
+[Languages.en]
+languageName = "En"
+languageCode = "en-us"
+contentDir = "content/english"
+weight = 1
+# copyright
+copyright = ""
+
+
+######################### english navigation #############################
+# main menu
+[[Languages.en.menu.main]]
+name = "Home"
+URL = "/"
+weight = 1
+
+[[Languages.en.menu.main]]
+name = "Research"
+URL = "research"
+weight = 2
+
+[[Languages.en.menu.main]]
+name = "Projects"
+URL = "project"
+weight = 3
+
+[[Languages.en.menu.main]]
+name = "Publications"
+URL = "publications"
+weight = 4
+
+[[Languages.en.menu.main]]
+name = "Our Team"
+URL = "team"
+weight = 5
+
+[[Languages.en.menu.main]]
+name = "News"
+URL = "blog"
+weight = 6
+
+# [[Languages.en.menu.main]]
+# weight = 7
+# name = "Pages"
+# hasChildren = true
+#
+#  [[Languages.en.menu.main]]
+#  parent = "Pages"
+# name = "FAQ"
+#  URL = "faq"
+#
+#  [[Languages.en.menu.main]]
+#  parent = "Pages"
+#  name = "Pricing"
+#  URL = "pricing"
+  
+[[Languages.en.menu.main]]
+name = "Contact"
+URL = "contact"
+weight = 8
+
+
+# footer menu
+[[Languages.en.menu.footer]]
+name = "Research"
+URL = "research"
+weight = 1
+
+[[Languages.en.menu.footer]]
+name = "Projects"
+URL = "project"
+weight = 2
+
+[[Languages.en.menu.footer]]
+name = "Publications"
+URL = "publications"
+weight = 3
+
+[[Languages.en.menu.footer]]
+name = "Our Team"
+URL = "team"
+weight = 4
+
+[[Languages.en.menu.footer]]
+name = "News"
+URL = "blog"
+weight = 5
+
+[[Languages.en.menu.footer]]
+name = "Contact"
+URL = "contact"
+weight = 6
+
+
+[[Languages.fr.menu.footer]]
+name = "Contact"
+URL = "contact"
+weight = 6

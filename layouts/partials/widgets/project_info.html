@@ -1,0 +1,42 @@
+<div class="widget widget-latest-post">
+	{{ $exclude:=.Scratch.Get "exclude" }}
+    {{ $current_members:=slice }}
+    {{ range where (where .Site.Pages "Type" "team") ".Params.status" "==" "current" }}
+		{{ $current_members = $current_members | append .Title }}
+    {{ end }}
+
+	<div class="media">
+    	<h4 class="widget-title">Research Theme</h4>
+    	{{ range .Params.research_categories }}
+    		{{ $research_theme:= . }}
+    		{{ range where $.Site.Pages "Type" "research" }}
+    			{{ if eq $research_theme .Params.category }} 
+    				<a href="{{ .URL | relURL }}"><strong>{{ $research_theme }}</strong></a>
+	    		{{ end }}	
+    		{{ end }}
+    	{{ end }}	
+	</div>
+            {{ range $i,$element:=.Params.details }}
+	<div class="media">
+        <ul>
+	    	<h4 class="widget-title">Project {{ $element.label }}</h4>
+            {{ if eq $element.label "Members" }}
+            	{{ range $index,$member:=$element.info }}
+            		<li><span>                	
+            		{{ $authorlink:=path.Join "/team/" ( $member | urlize) "/"}}
+            		{{ if and ($.Site.GetPage $authorlink) ( in $current_members $member ) }}
+                	    <a href="{{ $authorlink | relURL }}"><strong>{{ $member }}</strong></a>
+                	{{ else }}    
+                	    <a>{{ $member }}</a>
+                	{{ end }}
+	            	</span></li>
+			{{ end }}
+            {{ else }}
+            	{{ if .info }} 
+               		<li><strong>{{ .info | markdownify }}</strong></li>
+            	{{ end }}
+            {{ end }}
+        </ul>
+	</div>
+            {{ end }}
+</div>

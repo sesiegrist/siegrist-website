@@ -1,0 +1,127 @@
+################################## About #####################################
+about:
+  enable : true
+  image : "images/company/composite-1.png"
+  title : "Basic autonomous and higher voluntary cognitive functions of the brain require production of an immense diversity of neuron types at the right place and time, as well as correct wiring of these neurons into an array of functional neuronal circuits. In the Siegrist Lab, we are working to understand how the immense number of molecularly and functionally distinct neuron types are produced during development and importantly, how natural environments impact generation of neuron number and diversity in animals living in the real world. Research in the Siegrist lab is focused on the following fundamental themes and questions."
+  title : ""
+  content :
+
+
+################################## About #####################################
+about:
+  enable : true
+  image : "images/company/quies-vs-prolif.png"
+  title : "Research Themes"
+  title : "Nutrient-control of neural stem cells in their niche"
+  content : "Neural stem cells, like other stem cells, switch between quiescence and proliferation as part of their normal developmental program, during adult homeostasis, and for repairing tissue after damage. We are working to understand the lineage-specific NSC intrinsic programs that govern NSC proliferation decisions in response to dietary nutrient availability."
+  
+
+################################## About #####################################
+about:
+  enable : true
+  image : "images/company/composite-1.png"
+  title : "Research Themes"
+  title : "Intrinsic genetic programs and temporal identity factors that control neural stem proliferation timing and neuronal diversity"
+  content : "Neural stem cells express different transcription factors and signaling molecules over time, which allows for sequential generation of different neuron types over time. We are working to identify additional neural stem cell intrinsic factors that regulate temporal identity and are investigating how dietary nutrients and steroid hormones influence timing of NSC temporal transitions. During development, neural tissues, including the brain, become progressively more sophisticated and complex: neuron numbers increase as well as the molecular and functional diversity of neuron types produced. Yet, at the same time, the capacity for generating different neuron types decrease over time. We are investigating how neurogenesis becomes progressively restricted during development."
+
+
+################################## About #####################################
+about:
+  enable : true
+  image : "images/company/IPCs.png"
+  title : "Research Themes"
+  title : "Neural circuits involved in nutrient sensing and brain growth control" 
+  content : "Neurosecretory neurons in the brain synthesize and secrete a myriad of neuropeptides, hormones and other neuromodulatory factors that coordinate tissue growth and homeostasis with overall animal growth and physiology. How are these neuronal circuits architected and how do these circuits affect NSC proliferation to coordinate overall brain growth with overall organismal growth?"
+
+
+################################# About #####################################
+about:
+  enable : true
+  image : "images/company/ectopic-neurogenesis.png"
+  title : "Research Themes"
+  title : "Repair and regeneration of adult neural tissues"
+  content : "Bones and skin have an amazing ability to self-repair. Even the liver can fully regenerate after a partial hepatectomy. In contrast, neural tissues, including the brain have an extremely limited ability to self-repair. We are working to understand the limited regenerative capacity of adult neural tissues and on developing methods to remake brain structures through reinitiation of developmental programs."
+  
+  
+################################# About #####################################
+about:
+  enable : true
+  image : "images/company/ectopic-neurogenesis.png"
+  title : "Research Themes"
+  title : "Repair and regeneration of adult neural tissues"
+  content : "Bones and skin have an amazing ability to self-repair. Even the liver can fully regenerate after a partial hepatectomy. In contrast, neural tissues, including the brain have an extremely limited ability to self-repair. We are working to understand the limited regenerative capacity of adult neural tissues and on developing methods to remake brain structures through reinitiation of developmental programs."
+  
+  
+################################ feature #####################################
+features:
+  enable : false
+  title : "We are indepented Design & Development Agency"
+  feature_item:
+    # feature item loop
+    - icon : "ion-ios-color-filter-outline" #ionicon pack v2 : https://ionicons.com/v2/
+      name : "IOS App Development"
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+      
+    # feature item loop
+    - icon : "ion-ios-unlocked-outline" #ionicon pack v2 : https://ionicons.com/v2/
+      name : "App Secutity"
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+      
+    # feature item loop
+    - icon : "ion-ios-game-controller-b-outline" #ionicon pack v2 : https://ionicons.com/v2/
+      name : "Games Development"
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+      
+    # feature item loop
+    - icon : "ion-ios-mic-outline" #ionicon pack v2 : https://ionicons.com/v2/
+      name : "Animation and Editing"
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+      
+    # feature item loop
+    - icon : "ion-ios-lightbulb-outline" #ionicon pack v2 : https://ionicons.com/v2/
+      name : "UI/UX Design"
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+      
+    # feature item loop
+    - icon : "ion-ios-star-outline" #ionicon pack v2 : https://ionicons.com/v2/
+      name : "Branding"
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+    
+
+#################################### testimonial & mission vision #######################################
+testimonial:
+  enable : false
+  # testimonial content comes from "data/*/homepage.yml" file
+
+mission_vision:
+  enable : true
+  tabs:
+    # tab item loop
+    - name : "Overview"
+      content : "Basic autonomous and higher voluntary cognitive functions of the brain require production of an immense di¬versity of neuron types at the right place and time, as well as correct wiring of these neurons into an array of functional neuronal circuits. Cell division of undifferentiated neural stem cells (NSCs) and committed neural progenitors drives neuron production. It is well accepted that abnormal NSC and progenitor division patterns are associated with neurodevelopmental disorders, including microcephaly and autism, as well as neuro¬degenerative diseases and cancer. Stem cell therapies are gaining traction as potential treatment options, but uncontrolled, rampant stem cell division and production of the wrong neuron types pose risks with serious consequences. 
+    
+    
+    While tremendous advances have been made in our understanding of NSC proliferation regulation, our understanding of how NSC proliferation decisions are coordinated within the context of whole animal physiology during development and in adulthood is still rudimentary. In particular, it remains unclear how NSC intrinsic genetic programs integrate with NSC extrinsic factors, local and systemic, to control number and type of neurons produced through space and over time. Multi-disciplinary approaches are needed to better understand the genetic and molecular, cellular and tissue-level control of NSC proliferation in intact brains of whole organisms during development and aging, under normal vs diseased states, and in response to changing natural environments."
+      
+    # tab item loop
+    - name : "Themes"
+      content : "Research in the Siegrist lab is focused on the following fundamental themes and questions:
+
+1) Nutrient-dependent control of NSCs in their niche: NSCs, like other stem cells, switch between quiescence and proliferation as part of developmental programs, during adult homeostasis, and for repairing tissue after damage. We are working to understand the lineage-specific NSC intrinsic programs that govern NSC proliferation decisions in response to dietary nutrient availability.
+
+2) Intrinsic genetic programs and temporal identity factors that control NSC proliferation timing and neuronal diversity: NSCs express different transcription factors and signaling molecules over time, which allows for sequential generation of different neuron types over time. We are working to identify additional NSC intrinsic factors that regulate temporal identity and are investigating how dietary nutrients and steroid hormones influence timing of NSC temporal transitions.
+
+3) Neural circuits involved in nutrient sensing and brain growth control: Neurosecretory neurons in the brain synthesize and secrete a myriad of neuropeptides, hormones and other neuromodulatory factors that coordinate tissue growth and homeostasis with overall animal growth and physiology. How are these neural circuits architected and how do these circuits affect NSC proliferation to coordinate overall brain growth with overall organismal growth? 
+
+
+4) Evolution and adaptation of NSC temporal patterning with developmental timing: Why are not all brains the same even in a given species? Do evolutionary pressures lead to adaptations that manifest in distinct NSC proliferation patterns in response to environmental conditions and ultimately varied brain organization? With these questions in mind, we are working to determine how dietary nutrient availability impacts brain development in laboratory-maintained versus wild caught Drosophila."
+      
+    # tab item loop
+    - name : "Approach"
+      content : "We use genetically tractable model organisms, including Drosophila melanogaster to unravel fundamental genetic, molecular, and cell biological  principles that govern neural stem cell proliferation decisions (quiescence, proliferation, termination). Drosophila is a great model because the genes and pathways that regulate NSC proliferation decisions and neural development are evolutionarily conserved, a vast array of genetic tools and techniques exist allowing for easy temporal and spatial manip¬ulation of gene function, and flies have short generation times with well-defined periods of neurogenesis. Importantly, neurons in the Drosophila brain, as in mammals, are generated directly or indirectly from the cell divisions of NSCs."
+
+
+############################# call to action #################################
+cta:
+  enable : true
+  # call to action content comes from "data/*/homepage.yml"

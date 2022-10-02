@@ -1,0 +1,29 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ $data := index site.Data site.Language.Lang }}
+
+<section class="portfolio-single-page section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <div class="project-content mt-50">
+          <img style="width:500px;height:auto;padding-top:5px;padding-right:20px;padding-bottom:10px" align="left" src="{{ .Params.Image | relURL }}" alt="">
+          <div style="text-align:justify;padding-right:20px">{{ .Content }}</div>
+	  </div>
+	</div>
+    <div class="row">
+      <div class="col-md-3">
+        <div>
+           {{ .Scratch.Set "exclude" .Title }}
+           {{ partial "project-sidebar.html" . }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}
+
+
