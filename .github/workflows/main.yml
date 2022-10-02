@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      HUGO_VERSION: "0.81.0-extended"
+      HUGO_VERSION: "0.79.0"
       BUCKET_NAME: ${{ secrets.BUCKET_NAME }}
       DISTRIBUTION_ID: ${{ secrets.DISTRIBUTION_ID }}
       MAX_AGE: ${{ secrets.MAX_AGE }}
@@ -48,7 +48,7 @@ jobs:
       
       - name: Build webpages
         run: |
-          docker run -v $(pwd)/website:/website -w /website khsiller/hugo-builder:$HUGO_VERSION hugo -v --ignoreCache
+          docker run -v $(pwd)/website:/website -w /website khsiller/hugo-builder:$HUGO_VERSION hugo -v
           ls website/public
         
       - name: Upload to S3 and invalidate cache
