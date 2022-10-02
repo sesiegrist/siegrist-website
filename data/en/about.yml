@@ -30,7 +30,7 @@ about:
   enable : true
   image : "images/company/IPCs.png"
   title : "Research Themes"
-  title : "Neuronal circuits involved in nutrient sensing and brain growth control" 
+  title : "Neural circuits involved in nutrient sensing and brain growth control" 
   content : "Neurosecretory neurons in the brain synthesize and secrete a myriad of neuropeptides, hormones and other neuromodulatory factors that coordinate tissue growth and homeostasis with overall animal growth and physiology. How are these neuronal circuits architected and how do these circuits affect NSC proliferation to coordinate overall brain growth with overall organismal growth?"
 
 
@@ -111,7 +111,7 @@ mission_vision:
 
 2) Intrinsic genetic programs and temporal identity factors that control NSC proliferation timing and neuronal diversity: NSCs express different transcription factors and signaling molecules over time, which allows for sequential generation of different neuron types over time. We are working to identify additional NSC intrinsic factors that regulate temporal identity and are investigating how dietary nutrients and steroid hormones influence timing of NSC temporal transitions.
 
-3) Neuronal circuits involved in nutrient sensing and brain growth control: Neurosecretory neurons in the brain synthesize and secrete a myriad of neuropeptides, hormones and other neuromodulatory factors that coordinate tissue growth and homeostasis with overall animal growth and physiology. How are these neuronal circuits architected and how do these circuits affect NSC proliferation to coordinate overall brain growth with overall organismal growth? 
+3) Neural circuits involved in nutrient sensing and brain growth control: Neurosecretory neurons in the brain synthesize and secrete a myriad of neuropeptides, hormones and other neuromodulatory factors that coordinate tissue growth and homeostasis with overall animal growth and physiology. How are these neural circuits architected and how do these circuits affect NSC proliferation to coordinate overall brain growth with overall organismal growth? 
 
 
 4) Evolution and adaptation of NSC temporal patterning with developmental timing: Why are not all brains the same even in a given species? Do evolutionary pressures lead to adaptations that manifest in distinct NSC proliferation patterns in response to environmental conditions and ultimately varied brain organization? With these questions in mind, we are working to determine how dietary nutrient availability impacts brain development in laboratory-maintained versus wild caught Drosophila."

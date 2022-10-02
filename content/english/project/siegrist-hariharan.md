@@ -10,7 +10,7 @@ bg_image: "images/projects/E93-larval-brain-5.png"
 research_categories: ["Temporal Identity"]
 details:
   - label : "Members"
-    info : ["Sarah Siegrist", "Kendall Branham", "Chhavi Sood"]
+    info : ["Sarah Siegrist", "Kendall Branham", "Chhavi Sood", "Carina Karp"]
   - label : "Paper"
     info : "<a href=https://www.cell.com/current-biology/fulltext/S0960-9822(10)00156-9>Current Biology, Volume 20, Issue 7, 25 March 2010, Pages 643-648</a>"
 ---

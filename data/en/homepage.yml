@@ -23,7 +23,7 @@ about:
 ######################### Lab ###############################
 lab:
   enable : true
-  image : "images/lab-group-cropped.jpg"
+  image : "images/blog/Biologyretreat.png"
   title : "The people who make the magic happen"
   description : ""
   content : ""

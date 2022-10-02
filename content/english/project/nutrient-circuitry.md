@@ -2,7 +2,7 @@
 layout: "project"
 type: "project"
 current: true
-title: "Nutrient-regulated neuronal circuits and insulin signaling"
+title: "Nutrient-regulated neural circuits and insulin signaling"
 description: ""
 draft: false
 image : "images/projects/PI-region.png"
